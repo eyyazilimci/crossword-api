@@ -67,8 +67,9 @@ psql -U postgres -d crossword -f db/schema.sql
 
 ## Çalıştırma
 
+Bağlantı bilgisi ve şifre `src/Crossword.Api/appsettings.Development.json` dosyasında durur. Bu dosya Git'e gönderilmez; yoksa `appsettings.Development.example.json` dosyasını kopyalayıp şifreni yaz.
+
 ```bash
-dotnet user-secrets set "ConnectionStrings:Default" "Host=localhost;Port=5432;Database=crossword;Username=postgres;Password=..." --project src/Crossword.Api
 dotnet run --project src/Crossword.Api
 ```
 

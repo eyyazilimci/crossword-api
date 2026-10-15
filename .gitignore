@@ -67,3 +67,5 @@ obj/
 TestResults/
 appsettings.*.local.json
 
+# Local settings with secrets (copy appsettings.Development.example.json)
+appsettings.Development.json
