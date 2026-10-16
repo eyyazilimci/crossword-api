@@ -322,7 +322,7 @@ device;cihaz;n
 battery;pil;n
 signal;sinyal;n
 network;ağ;n
-website;web sitesi;n
+website;internet sitesi;n
 password;şifre;n
 video;video;n
 channel;kanal;n

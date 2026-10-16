@@ -40,6 +40,7 @@ tests/
 
 - **İngilizce:** [New General Service List (NGSL)](https://www.newgeneralservicelist.com/) temel alınarak seçilen 2118 yaygın içerik kelimesi. NGSL, Browne, Culligan & Phillips tarafından CC BY-SA 4.0 lisansıyla yayımlanmıştır.
 - **Türkçe çeviriler:** Proje için hazırlandı. Çeviri birden fazla kelime olabilir ("akşam yemeği"); ızgaraya boşluk ve tire olmadan yazılır (AKŞAMYEMEĞİ), ipucunda ise olduğu gibi görünür.
+- **Kalıplar** (`words-06-phrases.txt`): 304 yaygın İngilizce kalıp; phrasal verb, sabit ifade ve eşdizim ("give up", "of course", "take care of"). [Oxford Phrase List](https://www.oxfordlearnersdictionaries.com/wordlists/oxford-phrase-list) (Oxford University Press) içinden bulmacaya uygun olanlar seçildi; seviyeleri o listenin CEFR seviyeleri. Izgaraya sadece harfler yazılır (GIVEUP), ipucunda "kalıp" etiketi görünür.
 - **Seviye:** Sıklık sırasından türetilir, her seviyede 350 kelime: A1, A2, B1, B2, C1, C2. Hepsi günlük hayatta yaygın kelimeler; C1/C2 resmi CEFR derecesi değil, listenin en az sık kısmı demek.
 - **Zorluklar:** Kolay A1–A2, Orta A2–B1, Zor B1–B2, Uzman C1–C2.
 - **Değişiklik:** Dosyayı düzenleyip uygulamayı yeniden başlatman yeterli. Seeder mevcut kelimeleri günceller, yenileri ekler.

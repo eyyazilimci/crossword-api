@@ -35,6 +35,9 @@ public enum PartOfSpeech
     Adjective = 3,
     Adverb = 4,
     Other = 5,
+
+    /// <summary>Multi-word English expression: phrasal verb, fixed phrase or collocation.</summary>
+    Phrase = 6,
 }
 
 public enum Orientation

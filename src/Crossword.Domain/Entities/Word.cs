@@ -23,7 +23,7 @@ public sealed class Word
 
         return new Word
         {
-            English = english.Trim().ToLowerInvariant(),
+            English = english.Trim(),
             Turkish = turkish.Trim(),
             PartOfSpeech = partOfSpeech,
             Level = level,

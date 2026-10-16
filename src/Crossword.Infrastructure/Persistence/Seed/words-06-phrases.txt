@@ -1,0 +1,309 @@
+# english;turkish;phr;level
+# Common English phrases: phrasal verbs, fixed expressions and collocations.
+# Selected from the Oxford Phrase List (Oxford University Press), keeping only phrases that work as
+# crossword answers; placeholders such as "sth"/"sb" removed. Levels are the list's CEFR levels.
+# Translations written for this project. The grid answer keeps letters only ("give up" -> GIVEUP).
+a few;birkaç;phr;A1
+a little;biraz;phr;A1
+a lot of;bir sürü;phr;A1
+all day;bütün gün;phr;A1
+all over the world;dünyanın her yerinde;phr;A1
+around the world;dünya çapında;phr;A1
+agree with;aynı fikirde olmak;phr;A1
+anything else;başka bir şey;phr;A1
+at home;evde;phr;A1
+at school;okulda;phr;A1
+at the moment;şu anda;phr;A1
+at the same time;aynı zamanda;phr;A1
+at the weekend;hafta sonunda;phr;A1
+at work;işte;phr;A1
+bad news;kötü haber;phr;A1
+because of;yüzünden;phr;A1
+best friend;en iyi arkadaş;phr;A1
+black and white;siyah beyaz;phr;A1
+city centre;şehir merkezi;phr;A1
+each other;birbirini;phr;A1
+every day;her gün;phr;A1
+excuse me;affedersiniz;phr;A1
+find out;öğrenmek;phr;A1
+for a long time;uzun süredir;phr;A1
+for a moment;bir an için;phr;A1
+for example;örneğin;phr;A1
+for the first time;ilk kez;phr;A1
+get married;evlenmek;phr;A1
+get off;inmek;phr;A1
+get on;binmek;phr;A1
+get ready;hazırlanmak;phr;A1
+get up;kalkmak;phr;A1
+go back;geri dönmek;phr;A1
+go home;eve gitmek;phr;A1
+go out;dışarı çıkmak;phr;A1
+go to bed;yatmak;phr;A1
+go to school;okula gitmek;phr;A1
+go to work;işe gitmek;phr;A1
+good morning;günaydın;phr;A1
+good news;iyi haber;phr;A1
+grow up;büyümek;phr;A1
+half an hour;yarım saat;phr;A1
+hard work;sıkı çalışma;phr;A1
+have fun;eğlenmek;phr;A1
+high school;lise;phr;A1
+how are you;nasılsın;phr;A1
+how long;ne kadar süre;phr;A1
+how many;kaç tane;phr;A1
+how much;ne kadar;phr;A1
+how often;ne sıklıkla;phr;A1
+I'm sorry;özür dilerim;phr;A1
+in fact;aslında;phr;A1
+in front of;önünde;phr;A1
+in my opinion;bence;phr;A1
+in the future;gelecekte;phr;A1
+in the morning;sabahleyin;phr;A1
+in the past;geçmişte;phr;A1
+last year;geçen yıl;phr;A1
+living room;oturma odası;phr;A1
+look for;aramak;phr;A1
+look like;benzemek;phr;A1
+mobile phone;cep telefonu;phr;A1
+next time;bir dahaki sefere;phr;A1
+next year;gelecek yıl;phr;A1
+no problem;sorun değil;phr;A1
+of course;tabii ki;phr;A1
+on holiday;tatilde;phr;A1
+on the left;solda;phr;A1
+on the phone;telefonda;phr;A1
+one day;bir gün;phr;A1
+over there;şurada;phr;A1
+phone call;telefon görüşmesi;phr;A1
+phone number;telefon numarası;phr;A1
+post office;postane;phr;A1
+right now;hemen şimdi;phr;A1
+sit down;oturmak;phr;A1
+someone else;başka biri;phr;A1
+stand up;ayağa kalkmak;phr;A1
+such as;gibi;phr;A1
+swimming pool;yüzme havuzu;phr;A1
+thank you;teşekkür ederim;phr;A1
+the next day;ertesi gün;phr;A1
+this morning;bu sabah;phr;A1
+too much;çok fazla;phr;A1
+wake up;uyanmak;phr;A1
+work hard;çok çalışmak;phr;A1
+you're welcome;rica ederim;phr;A1
+a long time ago;uzun zaman önce;phr;A2
+again and again;tekrar tekrar;phr;A2
+all the time;her zaman;phr;A2
+apply for;başvurmak;phr;A2
+art gallery;sanat galerisi;phr;A2
+as a result;sonuç olarak;phr;A2
+at first;ilk başta;phr;A2
+at least;en azından;phr;A2
+belong to;ait olmak;phr;A2
+care about;önemsemek;phr;A2
+carry on;devam etmek;phr;A2
+carry out;gerçekleştirmek;phr;A2
+check in;giriş yapmak;phr;A2
+check out;çıkış yapmak;phr;A2
+climate change;iklim değişikliği;phr;A2
+come back;geri gelmek;phr;A2
+come on;haydi;phr;A2
+credit card;kredi kartı;phr;A2
+deal with;uğraşmak;phr;A2
+do well;başarılı olmak;phr;A2
+except for;dışında;phr;A2
+fall in love;aşık olmak;phr;A2
+far away;çok uzak;phr;A2
+feel like;canı istemek;phr;A2
+first of all;ilk olarak;phr;A2
+focus on;odaklanmak;phr;A2
+get better;iyileşmek;phr;A2
+get lost;kaybolmak;phr;A2
+give up;vazgeçmek;phr;A2
+go away;uzaklaşmak;phr;A2
+go down;aşağı inmek;phr;A2
+go up;yukarı çıkmak;phr;A2
+good luck;bol şans;phr;A2
+have a look;göz atmak;phr;A2
+I don't care;umurumda değil;phr;A2
+I guess;sanırım;phr;A2
+I mean;yani;phr;A2
+I think so;öyle düşünüyorum;phr;A2
+in danger;tehlikede;phr;A2
+in the end;sonunda;phr;A2
+in the middle;ortada;phr;A2
+in this way;bu şekilde;phr;A2
+it depends;duruma göre değişir;phr;A2
+lead to;yol açmak;phr;A2
+let me know;bana haber ver;phr;A2
+look after;göz kulak olmak;phr;A2
+make a mistake;hata yapmak;phr;A2
+make money;para kazanmak;phr;A2
+make sense;mantıklı olmak;phr;A2
+make sure;emin olmak;phr;A2
+much better;çok daha iyi;phr;A2
+no way;olmaz;phr;A2
+not at all;hiç de değil;phr;A2
+old friend;eski arkadaş;phr;A2
+on the ground;yerde;phr;A2
+on time;tam zamanında;phr;A2
+on top of;üstünde;phr;A2
+pay attention;dikkat etmek;phr;A2
+police officer;polis memuru;phr;A2
+police station;karakol;phr;A2
+public transport;toplu taşıma;phr;A2
+put on;giymek;phr;A2
+quite a lot;epey;phr;A2
+save money;para biriktirmek;phr;A2
+science fiction;bilim kurgu;phr;A2
+so that;böylece;phr;A2
+take care of;ilgilenmek;phr;A2
+take off;havalanmak;phr;A2
+take part;katılmak;phr;A2
+take place;gerçekleşmek;phr;A2
+the rest of;geri kalanı;phr;A2
+these days;bu günlerde;phr;A2
+throw away;çöpe atmak;phr;A2
+turn off;kapatmak;phr;A2
+turn on;açmak;phr;A2
+work out;spor yapmak;phr;A2
+write down;not almak;phr;A2
+a little bit;azıcık;phr;B1
+after all;sonuçta;phr;B1
+and so on;ve benzeri;phr;B1
+as if;sanki;phr;B1
+as soon as possible;en kısa sürede;phr;B1
+at last;nihayet;phr;B1
+at risk;risk altında;phr;B1
+at times;zaman zaman;phr;B1
+break up;ayrılmak;phr;B1
+come up with;akıl etmek;phr;B1
+due to;nedeniyle;phr;B1
+economic growth;ekonomik büyüme;phr;B1
+exactly the same;tıpatıp aynı;phr;B1
+fall asleep;uykuya dalmak;phr;B1
+fed up;bıkmış;phr;B1
+for a while;bir süreliğine;phr;B1
+for free;bedava;phr;B1
+for instance;mesela;phr;B1
+for life;ömür boyu;phr;B1
+for some time;bir süredir;phr;B1
+get on with;iyi geçinmek;phr;B1
+get to know;tanımak;phr;B1
+get used to;alışmak;phr;B1
+global warming;küresel ısınma;phr;B1
+go ahead;buyurun;phr;B1
+go wrong;ters gitmek;phr;B1
+heart disease;kalp hastalığı;phr;B1
+high street;ana cadde;phr;B1
+higher education;yükseköğretim;phr;B1
+if I were you;yerinde olsam;phr;B1
+in addition;ek olarak;phr;B1
+in case;ne olur ne olmaz;phr;B1
+in charge of;sorumlu;phr;B1
+in contrast;aksine;phr;B1
+in general;genel olarak;phr;B1
+in other words;başka bir deyişle;phr;B1
+in particular;özellikle;phr;B1
+in public;herkesin önünde;phr;B1
+in recent years;son yıllarda;phr;B1
+in time;vaktinde;phr;B1
+in touch;iletişimde;phr;B1
+look forward to;dört gözle beklemek;phr;B1
+look out;dikkat et;phr;B1
+make a difference;fark yaratmak;phr;B1
+make up;uydurmak;phr;B1
+more and more;giderek daha fazla;phr;B1
+on a regular basis;düzenli olarak;phr;B1
+on my own;tek başıma;phr;B1
+on the other hand;öte yandan;phr;B1
+on the way;yolda;phr;B1
+over time;zamanla;phr;B1
+point of view;bakış açısı;phr;B1
+point out;belirtmek;phr;B1
+primary school;ilkokul;phr;B1
+prime minister;başbakan;phr;B1
+raise money;para toplamak;phr;B1
+run out;tükenmek;phr;B1
+search engine;arama motoru;phr;B1
+secondary school;ortaokul;phr;B1
+set up;kurmak;phr;B1
+slow down;yavaşlamak;phr;B1
+so far;şimdiye kadar;phr;B1
+suffer from;muzdarip olmak;phr;B1
+tell the truth;doğruyu söylemek;phr;B1
+thanks to;sayesinde;phr;B1
+too bad;çok yazık;phr;B1
+turn out;ortaya çıkmak;phr;B1
+way of life;yaşam biçimi;phr;B1
+well known;tanınmış;phr;B1
+all the way;sonuna kadar;phr;B2
+as a whole;bir bütün olarak;phr;B2
+at once;derhal;phr;B2
+at present;halihazırda;phr;B2
+at the end of the day;günün sonunda;phr;B2
+back up;desteklemek;phr;B2
+both sides;her iki taraf;phr;B2
+bring up;yetiştirmek;phr;B2
+come across;rastlamak;phr;B2
+come true;gerçek olmak;phr;B2
+cope with;başa çıkmak;phr;B2
+figure out;çözmek;phr;B2
+get over;atlatmak;phr;B2
+get rid of;kurtulmak;phr;B2
+hang on;bir saniye;phr;B2
+human rights;insan hakları;phr;B2
+in advance;önceden;phr;B2
+in place;yerinde;phr;B2
+in spite of;rağmen;phr;B2
+in the first place;ilk etapta;phr;B2
+in the near future;yakın gelecekte;phr;B2
+in turn;sırayla;phr;B2
+loads of;tonlarca;phr;B2
+mental health;ruh sağlığı;phr;B2
+more or less;aşağı yukarı;phr;B2
+no doubt;şüphesiz;phr;B2
+on the one hand;bir yandan;phr;B2
+once again;bir kez daha;phr;B2
+or so;civarında;phr;B2
+pretty much;hemen hemen;phr;B2
+put forward;öne sürmek;phr;B2
+put together;bir araya getirmek;phr;B2
+quality of life;yaşam kalitesi;phr;B2
+role model;rol model;phr;B2
+set out;yola çıkmak;phr;B2
+sort out;halletmek;phr;B2
+sum up;özetlemek;phr;B2
+take advantage of;yararlanmak;phr;B2
+take into account;hesaba katmak;phr;B2
+take over;devralmak;phr;B2
+the vast majority;büyük çoğunluk;phr;B2
+turn into;dönüşmek;phr;B2
+up to you;sana kalmış;phr;B2
+when it comes to;söz konusu olduğunda;phr;B2
+above all;hepsinden önemlisi;phr;C1
+back and forth;ileri geri;phr;C1
+be entitled to;hak kazanmak;phr;C1
+bear in mind;aklında tutmak;phr;C1
+bring about;neden olmak;phr;C1
+by no means;hiçbir şekilde;phr;C1
+call on;uğramak;phr;C1
+dispose of;elden çıkarmak;phr;C1
+follow up;takip etmek;phr;C1
+for the sake of;uğruna;phr;C1
+get away with;yanına kâr kalmak;phr;C1
+have in mind;aklında olmak;phr;C1
+in any case;her halükârda;phr;C1
+in effect;fiilen;phr;C1
+in full;eksiksiz;phr;C1
+in practice;uygulamada;phr;C1
+in the event of;durumunda;phr;C1
+in the face of;karşısında;phr;C1
+in the light of;ışığında;phr;C1
+in the meantime;bu arada;phr;C1
+in the midst of;ortasında;phr;C1
+in the wake of;ardından;phr;C1
+let alone;şöyle dursun;phr;C1
+on behalf of;adına;phr;C1
+to date;bugüne kadar;phr;C1
+up against;karşı karşıya;phr;C1
+with regard to;ile ilgili olarak;phr;C1

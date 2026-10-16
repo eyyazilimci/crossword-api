@@ -12,7 +12,8 @@ namespace Crossword.Infrastructure.Persistence;
 /// </summary>
 public sealed class WordSeeder(AppDbContext db, ILogger<WordSeeder> logger)
 {
-    public sealed record SeedWord(string English, string Turkish, PartOfSpeech PartOfSpeech, int Rank);
+    /// <param name="Level">Explicit level from the file (phrases), otherwise derived from <paramref name="Rank"/>.</param>
+    public sealed record SeedWord(string English, string Turkish, PartOfSpeech PartOfSpeech, int Rank, CefrLevel Level);
 
     public static IReadOnlyList<SeedWord> ReadEmbeddedList()
     {
@@ -33,10 +34,14 @@ public sealed class WordSeeder(AppDbContext db, ILogger<WordSeeder> logger)
                     continue;
 
                 var parts = line.Split(';');
-                if (parts.Length < 3 || !seen.Add(parts[0].Trim()))
+                if (parts.Length < 3 || !seen.Add(parts[0].Trim().ToLowerInvariant()))
                     continue;
 
-                words.Add(new SeedWord(parts[0].Trim(), parts[1].Trim(), ParsePartOfSpeech(parts[2]), words.Count + 1));
+                var rank = words.Count + 1;
+                var level = parts.Length > 3 && Enum.TryParse<CefrLevel>(parts[3].Trim(), true, out var explicitLevel)
+                    ? explicitLevel
+                    : DifficultyBands.LevelForRank(rank);
+                words.Add(new SeedWord(parts[0].Trim(), parts[1].Trim(), ParsePartOfSpeech(parts[2]), rank, level));
             }
         }
 
@@ -51,14 +56,13 @@ public sealed class WordSeeder(AppDbContext db, ILogger<WordSeeder> logger)
 
         foreach (var w in list)
         {
-            var level = DifficultyBands.LevelForRank(w.Rank);
             if (existing.TryGetValue(w.English, out var word))
             {
-                word.Update(w.Turkish, w.PartOfSpeech, level, w.Rank);
+                word.Update(w.Turkish, w.PartOfSpeech, w.Level, w.Rank);
             }
             else
             {
-                db.Words.Add(Word.Create(w.English, w.Turkish, w.PartOfSpeech, level, w.Rank));
+                db.Words.Add(Word.Create(w.English, w.Turkish, w.PartOfSpeech, w.Level, w.Rank));
                 added++;
             }
         }
@@ -73,6 +77,7 @@ public sealed class WordSeeder(AppDbContext db, ILogger<WordSeeder> logger)
         "v" => PartOfSpeech.Verb,
         "adj" => PartOfSpeech.Adjective,
         "adv" => PartOfSpeech.Adverb,
+        "phr" => PartOfSpeech.Phrase,
         _ => PartOfSpeech.Other,
     };
 }

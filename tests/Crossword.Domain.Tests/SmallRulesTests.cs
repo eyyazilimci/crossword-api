@@ -22,6 +22,9 @@ public class SmallRulesTests
     public void English_answers_use_invariant_casing()
     {
         Assert.Equal("LIGHT", AnswerNormalizer.ToAnswer("light", GameMode.TrToEn));
+        Assert.Equal("GIVEUP", AnswerNormalizer.ToAnswer("give up", GameMode.TrToEn));
+        Assert.Equal("YOUREWELCOME", AnswerNormalizer.ToAnswer("you're welcome", GameMode.TrToEn));
+        Assert.Equal("YANINAKARKALMAK", AnswerNormalizer.ToAnswer("yanına kâr kalmak", GameMode.EnToTr));
         Assert.False(AnswerNormalizer.IsValidAnswer("ÇAY", GameMode.TrToEn));
     }
 

@@ -18,12 +18,12 @@ public static class AnswerNormalizer
         mode == GameMode.TrToEn ? Normalize(word, english: true) : Normalize(word, english: false);
 
     /// <summary>
-    /// Multi-word phrases are written into the grid without separators: "akşam yemeği" → AKŞAMYEMEĞİ,
-    /// "e-posta" → EPOSTA. The clue keeps the original spelling.
+    /// Only letters go into the grid: "akşam yemeği" → AKŞAMYEMEĞİ, "e-posta" → EPOSTA,
+    /// "you're welcome" → YOUREWELCOME. The clue keeps the original spelling.
     /// </summary>
     public static string Normalize(string word, bool english)
     {
-        var joined = new string(word.Where(ch => !char.IsWhiteSpace(ch) && ch is not ('-' or '\'' or '’')).ToArray());
+        var joined = new string(word.Where(char.IsLetter).ToArray());
         if (english)
             return joined.ToUpperInvariant();
 
