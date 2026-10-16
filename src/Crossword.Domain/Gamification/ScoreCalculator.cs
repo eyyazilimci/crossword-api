@@ -32,7 +32,8 @@ public static class ScoreCalculator
         {
             Difficulty.Easy => 1.0,
             Difficulty.Medium => 1.25,
-            _ => 1.5,
+            Difficulty.Hard => 1.5,
+            _ => 1.75,
         };
 
         var total = (int)Math.Round((wordPoints + timeBonus + flawlessBonus) * multiplier);

@@ -73,6 +73,7 @@ disease;hastalık;n
 medicine;ilaç;n
 fever;ateş;n
 cough;öksürük;n
+headache;baş ağrısı;n
 injury;yaralanma;n
 wound;yara;n
 treatment;tedavi;n
@@ -153,6 +154,7 @@ cake;pasta;n
 cookie;kurabiye;n
 chocolate;çikolata;n
 candy;şekerleme;n
+juice;meyve suyu;n
 beer;bira;n
 wine;şarap;n
 meal;öğün;n
@@ -161,6 +163,7 @@ menu;menü;n
 waiter;garson;n
 bill;fatura;n
 cash;nakit;n
+coin;madeni para;n
 wallet;cüzdan;n
 card;kart;n
 account;hesap;n
@@ -211,6 +214,7 @@ mirror;ayna;n
 comb;tarak;n
 soap;sabun;n
 towel;havlu;n
+toothbrush;diş fırçası;n
 blanket;battaniye;n
 pillow;yastık;n
 sofa;kanepe;n
@@ -241,6 +245,7 @@ rent;kira;n
 furniture;mobilya;n
 desk;sıra;n
 pen;kalem;n
+pencil;kurşun kalem;n
 eraser;silgi;n
 ruler;cetvel;n
 notebook;defter;n
@@ -252,6 +257,8 @@ author;yazar;n
 title;başlık;n
 chapter;bölüm;n
 text;metin;n
+grammar;dil bilgisi;n
+vocabulary;kelime dağarcığı;n
 meaning;anlam;n
 translation;çeviri;n
 knowledge;bilgi;n
@@ -262,9 +269,11 @@ ability;yetenek;n
 habit;alışkanlık;n
 behavior;davranış;n
 character;karakter;n
+charity;hayır kurumu;n
 personality;kişilik;n
 emotion;duygu;n
 feeling;his;n
+mood;ruh hali;n
 happiness;mutluluk;n
 sadness;üzüntü;n
 pride;gurur;n
@@ -301,6 +310,7 @@ mystery;gizem;n
 secret;sır;n
 lie;yalan;n
 theory;teori;n
+scientist;bilim insanı;n
 experiment;deney;n
 discovery;keşif;n
 invention;icat;n
@@ -312,6 +322,7 @@ device;cihaz;n
 battery;pil;n
 signal;sinyal;n
 network;ağ;n
+website;web sitesi;n
 password;şifre;n
 video;video;n
 channel;kanal;n
@@ -341,6 +352,8 @@ seven;yedi;n
 eight;sekiz;n
 nine;dokuz;n
 ten;on;n
+eleven;on bir;n
+twelve;on iki;n
 twenty;yirmi;n
 thirty;otuz;n
 forty;kırk;n
@@ -369,10 +382,13 @@ october;ekim;n
 november;kasım;n
 december;aralık;n
 century;yüzyıl;n
+decade;on yıl;n
 date;tarih;n
 calendar;takvim;n
 schedule;program;n
 second;saniye;n
 noon;öğle;n
+midnight;gece yarısı;n
 evening;akşam;n
+afternoon;öğleden sonra;n
 dawn;şafak;n

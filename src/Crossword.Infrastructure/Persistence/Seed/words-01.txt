@@ -1,5 +1,6 @@
 # english;turkish;pos  (pos: n=noun, v=verb, adj=adjective, adv=adverb)
 # Order follows NGSL frequency; line order is the frequency rank.
+# Translations may be phrases (akşam yemeği); the grid answer drops spaces and hyphens (AKŞAMYEMEĞİ).
 time;zaman;n
 year;yıl;n
 people;insanlar;n
@@ -36,6 +37,7 @@ story;hikaye;n
 fact;gerçek;n
 month;ay;n
 study;çalışma;n
+suffer;acı çekmek;v
 book;kitap;n
 eye;göz;n
 job;iş;n
@@ -99,6 +101,7 @@ experience;deneyim;n
 effect;etki;n
 class;sınıf;n
 control;kontrol;n
+convince;ikna etmek;v
 care;bakım;n
 field;tarla;n
 development;gelişme;n
@@ -196,6 +199,8 @@ river;nehir;n
 summer;yaz;n
 choice;seçim;n
 answer;cevap;n
+borrow;ödünç almak;v
+lend;ödünç vermek;v
 west;batı;n
 south;güney;n
 east;doğu;n
@@ -225,6 +230,8 @@ bed;yatak;n
 letter;mektup;n
 chair;sandalye;n
 kitchen;mutfak;n
+dinner;akşam yemeği;n
+lunch;öğle yemeği;n
 breakfast;kahvaltı;n
 bread;ekmek;n
 milk;süt;n
@@ -312,12 +319,15 @@ floor;kat;n
 roof;çatı;n
 stairs;merdiven;n
 bathroom;banyo;n
+bedroom;yatak odası;n
 neighbor;komşu;n
-brother;kardeş;n
+brother;erkek kardeş;n
+sister;kız kardeş;n
 uncle;amca;n
 aunt;teyze;n
 grandmother;büyükanne;n
 grandfather;büyükbaba;n
+daughter;kız evlat;n
 cousin;kuzen;n
 guest;misafir;n
 king;kral;n
@@ -347,6 +357,7 @@ radio;radyo;n
 newspaper;gazete;n
 magazine;dergi;n
 message;mesaj;n
+email;e-posta;n
 internet;internet;n
 page;sayfa;n
 list;liste;n
@@ -369,6 +380,7 @@ match;maç;n
 goal;hedef;n
 prize;ödül;n
 gift;hediye;n
+birthday;doğum günü;n
 wedding;düğün;n
 noise;gürültü;n
 smell;koku;n
@@ -390,6 +402,7 @@ chance;fırsat;n
 success;başarı;n
 future;gelecek;n
 past;geçmiş;n
+weekend;hafta sonu;n
 today;bugün;adv
 tomorrow;yarın;adv
 yesterday;dün;adv

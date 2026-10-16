@@ -55,6 +55,7 @@ stop;durdurmak;v
 create;yaratmak;v
 speak;konuşmak;v
 read;okumak;v
+allow;izin vermek;v
 add;eklemek;v
 spend;harcamak;v
 grow;büyümek;v
@@ -67,6 +68,7 @@ consider;düşünmek;v
 appear;belirmek;v
 buy;almak;v
 wait;beklemek;v
+serve;hizmet etmek;v
 die;ölmek;v
 send;göndermek;v
 expect;beklemek;v
@@ -82,6 +84,7 @@ raise;kaldırmak;v
 pass;geçmek;v
 sell;satmak;v
 require;gerektirmek;v
+decide;karar vermek;v
 pull;çekmek;v
 return;dönmek;v
 explain;açıklamak;v
@@ -100,6 +103,7 @@ choose;seçmek;v
 cause;neden;n
 point;nokta;n
 listen;dinlemek;v
+realize;farkına varmak;v
 close;kapatmak;v
 involve;içermek;v
 increase;artırmak;v
@@ -107,6 +111,7 @@ drive;sürmek;v
 fight;savaşmak;v
 throw;atmak;v
 teach;öğretmek;v
+sing;şarkı söylemek;v
 drink;içmek;v
 travel;seyahat;n
 visit;ziyaret;n
@@ -126,6 +131,7 @@ forget;unutmak;v
 forgive;affetmek;v
 worry;endişe;n
 enjoy;eğlenmek;v
+prefer;tercih etmek;v
 steal;çalmak;v
 hide;saklamak;v
 search;aramak;v
@@ -156,6 +162,7 @@ protect;korumak;v
 attack;saldırı;n
 destroy;mahvetmek;v
 burn;yakmak;v
+shoot;ateş etmek;v
 fail;başarısız;adj
 succeed;başarmak;v
 prepare;hazırlamak;v
@@ -202,6 +209,8 @@ weak;zayıf;adj
 whole;bütün;adj
 true;doğru;adj
 real;gerçek;adj
+best;en iyi;adj
+better;daha iyi;adj
 low;alçak;adj
 short;kısa;adj
 local;yerel;adj
@@ -319,10 +328,14 @@ probably;muhtemelen;adv
 especially;özellikle;adv
 exactly;tam;adv
 later;sonra;adv
+once;bir kez;adv
+twice;iki kez;adv
 quite;oldukça;adv
 enough;yeterli;adj
 instead;yerine;adv
 outside;dışarıda;adv
 inside;içeride;adv
+abroad;yurt dışında;adv
 forward;ileri;adv
 upstairs;yukarıda;adv
+everywhere;her yerde;adv

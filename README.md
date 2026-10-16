@@ -31,16 +31,17 @@ tests/
 - **Seçim:** Her bulmaca için birkaç rastgele yerleşim denenir, en iyi skoru alan seçilir. Skor; kelime sayısına, kesişme sayısına ve doluluğa bakar.
 - **Boyut:** Çalışma alanı 19–23 hücre arasında seçilir, sonuç kullanılan alana kırpılır. Ortalama 21×21 ve 55–60 kelime çıkar.
 - **`LibraryPlanner`:** Bulmaca serisini üretir. Her bulmaca henüz kullanılmamış bir kelimeye sabitlenir, böylece **her kelime en az bir kez** kullanılır. Ardından her zorluk seviyesi için en az `MinPuzzlesPerDifficulty` bulmaca olacak şekilde tamamlar.
-- **Uygulama başlarken:** Mod başına zorluk başına 30 bulmaca üretilir; toplamda 2 mod × 3 seviye × 30 = 180 bulmaca. Kütüphane biterse yeni bulmaca anında üretilir.
+- **Uygulama başlarken:** Mod başına zorluk başına 30 bulmaca üretilir; toplamda 2 mod × 4 seviye × 30 = 240 bulmaca. Listeye yeni kelime eklenirse onları kapsayan bulmacalar da açılışta üretilir. Kütüphane biterse yeni bulmaca anında üretilir.
 - **Zayıf kelimeler:** Yanlış yaptığın kelimeler yeni bulmacalarda daha yüksek öncelik alır.
 
 ## Kelime listesi
 
 `src/Crossword.Infrastructure/Persistence/Seed/words-*.txt` (`english;turkish;pos`, satır sırası = sıklık sırası)
 
-- **İngilizce:** [New General Service List (NGSL)](https://www.newgeneralservicelist.com/) temel alınarak seçilen 2033 yaygın içerik kelimesi. NGSL, Browne, Culligan & Phillips tarafından CC BY-SA 4.0 lisansıyla yayımlanmıştır.
-- **Türkçe çeviriler:** Proje için hazırlandı. Yalnızca tek kelimelik çeviriler alındı.
-- **Seviye:** Sıklık sırasından türetilir: ilk 500 A1, sonraki 500 A2, sonraki 500 B1, kalanı B2.
+- **İngilizce:** [New General Service List (NGSL)](https://www.newgeneralservicelist.com/) temel alınarak seçilen 2118 yaygın içerik kelimesi. NGSL, Browne, Culligan & Phillips tarafından CC BY-SA 4.0 lisansıyla yayımlanmıştır.
+- **Türkçe çeviriler:** Proje için hazırlandı. Çeviri birden fazla kelime olabilir ("akşam yemeği"); ızgaraya boşluk ve tire olmadan yazılır (AKŞAMYEMEĞİ), ipucunda ise olduğu gibi görünür.
+- **Seviye:** Sıklık sırasından türetilir, her seviyede 350 kelime: A1, A2, B1, B2, C1, C2. Hepsi günlük hayatta yaygın kelimeler; C1/C2 resmi CEFR derecesi değil, listenin en az sık kısmı demek.
+- **Zorluklar:** Kolay A1–A2, Orta A2–B1, Zor B1–B2, Uzman C1–C2.
 - **Değişiklik:** Dosyayı düzenleyip uygulamayı yeniden başlatman yeterli. Seeder mevcut kelimeleri günceller, yenileri ekler.
 
 ## Veritabanı

@@ -11,6 +11,7 @@ ambition;hırs;n
 analysis;analiz;n
 ancestor;ata;n
 angle;açı;n
+anniversary;yıl dönümü;n
 anxiety;kaygı;n
 appearance;görünüm;n
 appetite;iştah;n
@@ -68,6 +69,7 @@ carbon;karbon;n
 cave;mağara;n
 celebration;kutlama;n
 chain;zincir;n
+challenge;meydan okuma;n
 champion;şampiyon;n
 chest;göğüs;n
 chef;aşçı;n
@@ -119,6 +121,7 @@ curve;eğri;n
 cushion;minder;n
 custom;gelenek;n
 cycle;döngü;n
+deadline;son tarih;n
 debate;tartışma;n
 defence;savunma;n
 definition;tanım;n
@@ -128,6 +131,7 @@ departure;kalkış;n
 deposit;depozito;n
 description;tanım;n
 desire;arzu;n
+destination;varış yeri;n
 detail;ayrıntı;n
 detective;dedektif;n
 dialogue;diyalog;n
@@ -229,6 +233,7 @@ highway;otoyol;n
 hobby;hobi;n
 hole;delik;n
 horror;dehşet;n
+host;ev sahibi;n
 household;hane;n
 humor;mizah;n
 hunger;açlık;n
@@ -267,12 +272,15 @@ labor;emek;n
 laboratory;laboratuvar;n
 ladder;merdiven;n
 landscape;peyzaj;n
+laptop;dizüstü bilgisayar;n
 lawn;çimenlik;n
 layer;katman;n
 leadership;liderlik;n
 legend;efsane;n
+leisure;boş zaman;n
 liberty;hürriyet;n
 license;ehliyet;n
+lifestyle;yaşam tarzı;n
 lion;aslan;n
 liquid;sıvı;n
 literature;edebiyat;n
@@ -292,6 +300,7 @@ mask;maske;n
 mass;kütle;n
 master;usta;n
 material;malzeme;n
+mayor;belediye başkanı;n
 mechanic;tamirci;n
 medal;madalya;n
 media;medya;n
@@ -351,6 +360,7 @@ pension;emeklilik;n
 pepper;biber;n
 performance;performans;n
 permission;izin;n
+pet;evcil hayvan;n
 philosophy;felsefe;n
 physics;fizik;n
 pianist;piyanist;n
@@ -545,6 +555,7 @@ thread;iplik;n
 threat;tehdit;n
 throat;boğaz;n
 thumb;başparmak;n
+thunder;gök gürültüsü;n
 tide;gelgit;n
 tiger;kaplan;n
 timber;kereste;n
@@ -552,6 +563,7 @@ tin;teneke;n
 tip;bahşiş;n
 tissue;doku;n
 tobacco;tütün;n
+toe;ayak parmağı;n
 tomb;mezar;n
 ton;ton;n
 topic;konu;n
@@ -604,3 +616,4 @@ wolf;kurt;n
 wonder;hayret;n
 worm;solucan;n
 zone;bölge;n
+zoo;hayvanat bahçesi;n

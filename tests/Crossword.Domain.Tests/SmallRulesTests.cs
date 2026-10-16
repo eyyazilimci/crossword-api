@@ -10,6 +10,8 @@ public class SmallRulesTests
     [InlineData("istemek", "İSTEMEK")]
     [InlineData("kâğıt", "KAĞIT")]
     [InlineData("çiçek", "ÇİÇEK")]
+    [InlineData("akşam yemeği", "AKŞAMYEMEĞİ")]
+    [InlineData("e-posta", "EPOSTA")]
     public void Turkish_answers_use_turkish_casing(string word, string expected)
     {
         Assert.Equal(expected, AnswerNormalizer.ToAnswer(word, GameMode.EnToTr));
@@ -31,6 +33,15 @@ public class SmallRulesTests
     [InlineData(250, 3)]
     [InlineData(450, 4)]
     public void Level_grows_with_xp(int xp, int level) => Assert.Equal(level, LevelProgression.LevelForXp(xp));
+
+    [Theory]
+    [InlineData(1, CefrLevel.A1)]
+    [InlineData(350, CefrLevel.A1)]
+    [InlineData(351, CefrLevel.A2)]
+    [InlineData(1401, CefrLevel.C1)]
+    [InlineData(2118, CefrLevel.C2)]
+    public void Level_follows_frequency_rank(int rank, CefrLevel level) =>
+        Assert.Equal(level, Crosswords.DifficultyBands.LevelForRank(rank));
 
     [Fact]
     public void Achievement_codes_are_unique() =>

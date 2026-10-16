@@ -15,6 +15,7 @@ public enum Difficulty
     Easy = 1,
     Medium = 2,
     Hard = 3,
+    Expert = 4,
 }
 
 public enum CefrLevel
@@ -23,6 +24,8 @@ public enum CefrLevel
     A2 = 2,
     B1 = 3,
     B2 = 4,
+    C1 = 5,
+    C2 = 6,
 }
 
 public enum PartOfSpeech

@@ -17,15 +17,19 @@ public static class AnswerNormalizer
     public static string ToAnswer(string word, GameMode mode) =>
         mode == GameMode.TrToEn ? Normalize(word, english: true) : Normalize(word, english: false);
 
+    /// <summary>
+    /// Multi-word phrases are written into the grid without separators: "akşam yemeği" → AKŞAMYEMEĞİ,
+    /// "e-posta" → EPOSTA. The clue keeps the original spelling.
+    /// </summary>
     public static string Normalize(string word, bool english)
     {
-        var trimmed = word.Trim();
+        var joined = new string(word.Where(ch => !char.IsWhiteSpace(ch) && ch is not ('-' or '\'' or '’')).ToArray());
         if (english)
-            return trimmed.ToUpperInvariant();
+            return joined.ToUpperInvariant();
 
         // Circumflex letters (kâğıt, hâlâ) are written without the hat in puzzles.
-        var sb = new StringBuilder(trimmed.Length);
-        foreach (var ch in trimmed)
+        var sb = new StringBuilder(joined.Length);
+        foreach (var ch in joined)
         {
             sb.Append(ch switch
             {

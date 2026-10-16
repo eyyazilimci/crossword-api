@@ -1,10 +1,12 @@
 # NGSL verbs and adjectives, mid frequency.
 accept;kabullenmek;v
 achieve;başarmak;v
+admit;itiraf etmek;v
 affect;etkilemek;v
 afford;karşılamak;v
 announce;duyurmak;v
 apply;başvurmak;v
+appreciate;takdir etmek;v
 approach;yaklaşmak;v
 arrange;düzenlemek;v
 attend;katılmak;v
@@ -12,10 +14,13 @@ avoid;kaçınmak;v
 bake;pişirmek;v
 beat;yenmek;v
 behave;davranmak;v
+belong;ait olmak;v
 bend;bükmek;v
 bite;ısırmak;v
 blow;üflemek;v
 boil;kaynatmak;v
+bother;rahatsız etmek;v
+breathe;nefes almak;v
 burst;patlamak;v
 calculate;hesaplamak;v
 celebrate;kutlamak;v
@@ -24,6 +29,7 @@ cheat;aldatmak;v
 chew;çiğnemek;v
 collect;toplamak;v
 combine;birleştirmek;v
+complain;şikayet etmek;v
 complete;tamamlamak;v
 concentrate;odaklanmak;v
 confirm;onaylamak;v
@@ -34,6 +40,10 @@ cross;geçmek;v
 damage;zarar;n
 deal;anlaşma;n
 defend;savunmak;v
+deliver;teslim etmek;v
+deny;inkar etmek;v
+depend;bağlı olmak;v
+deserve;hak etmek;v
 design;tasarım;n
 dig;kazmak;v
 disappear;kaybolmak;v
@@ -46,8 +56,10 @@ educate;eğitmek;v
 encourage;cesaretlendirmek;v
 escape;kaçmak;v
 examine;incelemek;v
+exist;var olmak;v
 expand;genişlemek;v
 explore;keşfetmek;v
+express;ifade etmek;v
 fold;katlamak;v
 gather;toplanmak;v
 greet;selamlamak;v
@@ -60,10 +72,13 @@ hunt;avlamak;v
 hurry;acele;n
 hurt;incitmek;v
 identify;tanımlamak;v
+ignore;görmezden gelmek;v
 improve;geliştirmek;v
 inform;bilgilendirmek;v
 injure;yaralamak;v
+insist;ısrar etmek;v
 introduce;tanıtmak;v
+invest;yatırım yapmak;v
 kick;tekmelemek;v
 knock;vurmak;v
 lay;sermek;v
@@ -74,30 +89,41 @@ mark;işaret;n
 melt;erimek;v
 mention;bahsetmek;v
 mix;karıştırmak;v
+notice;fark etmek;v
+obey;itaat etmek;v
 observe;gözlemlemek;v
 obtain;edinmek;v
+occur;meydana gelmek;v
+own;sahip olmak;v
 pack;paketlemek;v
 perform;sergilemek;v
 permit;izin;n
 persuade;inandırmak;v
 pick;toplamak;v
 pour;dökmek;v
+pray;dua etmek;v
 predict;öngörmek;v
+pretend;numara yapmak;v
 prevent;önlemek;v
 print;yazdırmak;v
 prove;kanıtlamak;v
 publish;yayınlamak;v
 punish;cezalandırmak;v
 recognize;tanımak;v
+recommend;tavsiye etmek;v
 reduce;azaltmak;v
 refuse;reddetmek;v
 relax;dinlenmek;v
+release;serbest bırakmak;v
 rely;güvenmek;v
 remove;kaldırmak;v
 replace;değiştirmek;v
 reply;yanıt;n
+represent;temsil etmek;v
 rescue;kurtarmak;v
 rest;dinlenmek;v
+retire;emekli olmak;v
+reveal;ortaya çıkarmak;v
 ride;binmek;v
 rise;yükselmek;v
 roll;yuvarlanmak;v
@@ -126,9 +152,12 @@ supply;tedarik;n
 suppose;varsaymak;v
 surprise;sürpriz;n
 surround;çevrelemek;v
+survive;hayatta kalmak;v
 swallow;yutmak;v
 swing;sallanmak;v
 tear;yırtmak;v
+thank;teşekkür etmek;v
+threaten;tehdit etmek;v
 tie;bağlamak;v
 translate;çevirmek;v
 treat;davranmak;v
@@ -192,6 +221,7 @@ electric;elektrikli;adj
 equal;eşit;adj
 excellent;mükemmel;adj
 excited;heyecanlı;adj
+exciting;heyecan verici;adj
 extra;ekstra;adj
 extreme;aşırı;adj
 fair;adil;adj
@@ -221,6 +251,7 @@ honest;dürüst;adj
 huge;kocaman;adj
 ideal;ideal;adj
 ill;hasta;adj
+illegal;yasa dışı;adj
 immediate;acil;adj
 independent;bağımsız;adj
 individual;bireysel;adj
