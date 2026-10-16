@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crossword.Api", "src\Crossword.Api\Crossword.Api.csproj", "{59ABE878-0DFA-4FCD-A0BF-EDF4FF6D4C84}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crossword.Domain", "src\Crossword.Domain\Crossword.Domain.csproj", "{CC0426C6-F6FC-4F19-A03D-23B96F85B276}"
@@ -10,8 +12,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crossword.Application", "src\Crossword.Application\Crossword.Application.csproj", "{3A22782B-0F57-4DA6-B87C-3D24B1A9FDBB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crossword.Infrastructure", "src\Crossword.Infrastructure\Crossword.Infrastructure.csproj", "{0D1C6C19-6280-4BD0-BA74-4C087D1EA053}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crossword.Api", "src\Crossword.Api\Crossword.Api.csproj", "{59ABE878-0DFA-4FCD-A0BF-EDF4FF6D4C84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0AB3BF05-4346-4AA6-1389-037BE0695223}"
 EndProject
