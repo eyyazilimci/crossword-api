@@ -32,6 +32,7 @@ tests/
 - **Boyut:** Çalışma alanı 19–23 hücre arasında seçilir, sonuç kullanılan alana kırpılır. Ortalama 21×21 ve 55–60 kelime çıkar.
 - **`LibraryPlanner`:** Bulmaca serisini üretir. Her bulmaca henüz kullanılmamış bir kelimeye sabitlenir, böylece **her kelime en az bir kez** kullanılır. Ardından her zorluk seviyesi için en az `MinPuzzlesPerDifficulty` bulmaca olacak şekilde tamamlar.
 - **Uygulama başlarken:** Mod başına zorluk başına 30 bulmaca üretilir; toplamda 2 mod × 4 seviye × 30 = 240 bulmaca. Listeye yeni kelime eklenirse onları kapsayan bulmacalar da açılışta üretilir. Kütüphane biterse yeni bulmaca anında üretilir.
+- **Günün bulmacası:** Zorluğu bir önceki günlük bulmacadaki başarıya göre seçilir (`DailyDifficultyPolicy`). Başarı = ipucu açılmadan ve kontrolde yanlış çıkmadan çözülen kelimelerin oranı. %90 ve üstü bir seviye yukarı, %70 altı bir seviye aşağı, arası aynı; bitirilmeyen bulmaca seviyeyi değiştirmez; ilk gün Kolay. Her mod ayrı takip edilir.
 - **Zayıf kelimeler:** Yanlış yaptığın kelimeler yeni bulmacalarda daha yüksek öncelik alır.
 
 ## Kelime listesi

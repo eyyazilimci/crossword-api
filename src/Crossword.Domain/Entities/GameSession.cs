@@ -110,6 +110,12 @@ public sealed class GameSession
     public bool WasMissed(PuzzleEntry entry, int width) =>
         entry.CellIndexes(width).Any(i => RevealedMask[i] == On || MistakeMask[i] == On);
 
+    /// <summary>Share of words solved without a reveal or a wrong check. Needs <see cref="Puzzle"/> with its entries.</summary>
+    public double WordAccuracy() =>
+        Puzzle.Entries.Count == 0
+            ? 0
+            : (double)Puzzle.Entries.Count(e => !WasMissed(e, Puzzle.Width)) / Puzzle.Entries.Count;
+
     public bool HadRevealIn(PuzzleEntry entry, int width) =>
         entry.CellIndexes(width).Any(i => RevealedMask[i] == On);
 

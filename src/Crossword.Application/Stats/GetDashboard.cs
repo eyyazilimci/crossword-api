@@ -1,5 +1,6 @@
 using Crossword.Application.Abstractions;
 using Crossword.Application.Gamification;
+using Crossword.Application.Puzzles;
 using Crossword.Domain;
 using Mediator;
 using Microsoft.EntityFrameworkCore;
@@ -16,7 +17,9 @@ public sealed record InProgressGameDto(
     int ElapsedSeconds,
     DateTime UpdatedAt);
 
-public sealed record DailyStatusDto(GameMode Mode, Guid? PuzzleId, bool Completed);
+/// <param name="Difficulty">Today's difficulty: the existing puzzle's, or the one that will be generated.</param>
+/// <param name="Decision">Why the adaptive rule picks this level (based on the previous daily puzzle).</param>
+public sealed record DailyStatusDto(GameMode Mode, Guid? PuzzleId, bool Completed, Difficulty Difficulty, DailyDifficultyDecision Decision);
 
 public sealed record DashboardDto(
     ProfileDto Profile,
@@ -70,13 +73,14 @@ public sealed class GetDashboardHandler(IAppDbContext db, IClock clock) : IQuery
         var daily = new List<DailyStatusDto>();
         foreach (var mode in Enum.GetValues<GameMode>())
         {
-            var puzzleId = await db.Puzzles
+            var existing = await db.Puzzles
                 .Where(p => p.Mode == mode && p.DailyDate == today)
-                .Select(p => (Guid?)p.Id)
+                .Select(p => new { p.Id, p.Difficulty })
                 .FirstOrDefaultAsync(ct);
-            var completed = puzzleId is not null && await db.GameSessions
-                .AnyAsync(s => s.PuzzleId == puzzleId && s.Status == SessionStatus.Completed, ct);
-            daily.Add(new DailyStatusDto(mode, puzzleId, completed));
+            var completed = existing is not null && await db.GameSessions
+                .AnyAsync(s => s.PuzzleId == existing.Id && s.Status == SessionStatus.Completed, ct);
+            var decision = await db.DecideAsync(mode, today, ct);
+            daily.Add(new DailyStatusDto(mode, existing?.Id, completed, existing?.Difficulty ?? decision.Difficulty, decision));
         }
 
         var left = await db.Puzzles.CountAsync(p => p.DailyDate == null && !db.GameSessions.Any(s => s.PuzzleId == p.Id), ct);

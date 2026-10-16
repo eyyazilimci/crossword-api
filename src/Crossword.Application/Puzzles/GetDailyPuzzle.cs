@@ -6,7 +6,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Crossword.Application.Puzzles;
 
-/// <summary>Returns today's puzzle for the mode, creating it on first request.</summary>
+/// <summary>
+/// Returns today's puzzle for the mode, creating it on first request. Its difficulty adapts to how
+/// the previous daily puzzle went (see <see cref="Domain.Gamification.DailyDifficultyPolicy"/>).
+/// </summary>
 public sealed record GetDailyPuzzleCommand(GameMode Mode) : ICommand<PuzzleSummaryDto>;
 
 public sealed class GetDailyPuzzleValidator : AbstractValidator<GetDailyPuzzleCommand>
@@ -28,8 +31,9 @@ public sealed class GetDailyPuzzleHandler(IAppDbContext db, IClock clock, Puzzle
         if (existing is not null)
             return existing;
 
+        var decision = await db.DecideAsync(command.Mode, today, ct);
         var puzzle = await factory.CreateAsync(
-            command.Mode, Difficulty.Medium, PuzzleFactory.DailySeed(today, command.Mode), today, ct);
+            command.Mode, decision.Difficulty, PuzzleFactory.DailySeed(today, command.Mode), today, ct);
         return new PuzzleSummaryDto(puzzle.Id, puzzle.Mode, puzzle.Difficulty, puzzle.Width, puzzle.Height, puzzle.Entries.Count);
     }
 }
