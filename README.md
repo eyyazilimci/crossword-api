@@ -46,6 +46,21 @@ tests/
 - **Zorluklar:** Kolay A1–A2, Orta A2–B1, Zor B1–B2, Uzman C1–C2.
 - **Değişiklik:** Dosyayı düzenleyip uygulamayı yeniden başlatman yeterli. Seeder mevcut kelimeleri günceller, yenileri ekler.
 
+## Gramer testi (Günlük 10)
+
+`Crossword.Domain/Quiz`, `Crossword.Application/Quiz`
+
+Çengel bulmacanın yanında ikinci oyun: çoktan seçmeli, boşluk doldurmalı gramer soruları. Kelime listesinden bağımsızdır; bulmacanın XP, seri ve rozetlerine dokunmaz, kendi serisini ve istatistiğini tutar.
+
+- **Soru bankası:** `src/Crossword.Infrastructure/Persistence/Seed/quiz-*.txt`. Satır biçimi: `anahtar | konu | seviye | soru | A | B | C | D | cevap | açıklama`. Boşluk `___` ile gösterilir, iki boşluklu sorularda şıklar `a / b` biçimindedir. Açılışta anahtara göre yüklenir; dosyada düzeltilen soru yeniden başlatınca güncellenir.
+- **Kategoriler:** 13 ana kategori, 28 alt konu (`GrammarTopics`). Her soru bir alt konuya ve CEFR seviyesine bağlıdır.
+- **Günün testi:** 10 soru (`DailyQuizPlanner`). Önce önceki günlerde yanlış yapılan sorular (en eski önce, 3 adet), sonra en zayıf iki konudan yeni sorular (2'şer), bir üst seviyeden bir "meydan okuma" sorusu, kalanı konu başına en fazla 3 soruyla karışık. Bugün cevaplanan soru bugün tekrar sorulmaz.
+- **Konu gücü:** `(doğru + 1) / (görülen + 2)`. `Quiz:FocusTopics` ayarındaki konular yeterince oynanana kadar zayıf sayılır (başlangıç profili).
+- **Hedef seviye:** En az 8 cevap ve %70 başarı ile geçilen en yüksek seviyenin bir üstü; hiçbir seviye geçilmeden önce `Quiz:StartingLevel` (varsayılan B1, ayarda B2) (`QuizLevelPolicy`).
+- **Konu pratiği:** Seçilen konudan 10 soru; önce o konuda yanlış yapılanlar.
+- **Hatalı soru bildir:** Bildirilen soru bir daha sorulmaz; bankada düzeltilirse otomatik geri gelir.
+- **Testler:** `QuestionBankTests` gerçek banka dosyalarını okur: her satır geçerli mi, anahtarlar ve sorular tekil mi, her konuda en az 15 soru var mı, doğru cevaplar şıklara dengeli dağılmış mı, her şık her boşluğu dolduruyor mu.
+
 ## Veritabanı
 
 PostgreSQL. Tabloları elle oluşturmak için `db/schema.sql` dosyasını çalıştır:
@@ -64,9 +79,18 @@ psql -U postgres -d crossword -f db/schema.sql
 | `word_masteries` | Kelime başına doğru/yanlış sayısı (mod bazında) |
 | `player_profiles` | XP, seri, çözülen bulmaca sayısı (tek satır) |
 | `unlocked_achievements` | Açılan rozetler |
+| `quiz_questions` | Gramer soruları (`key`, `topic`, `level`, `prompt`, `options`, `correct_index`, `explanation`, `is_active`) |
+| `quiz_sessions` | Gramer testleri (`kind`: Daily/Practice, `daily_date`, `question_ids`, `choices`) |
+| `question_progress` | Soru başına görülme, doğru/yanlış sayısı ve son cevap |
 | `__EFMigrationsHistory` | EF Core migration kaydı (ileride `dotnet ef database update` için) |
 
 İstersen tabloları uygulamaya da kurdurabilirsin: `appsettings.json` → `Database:AutoMigrate: true`.
+
+Veritabanın gramer testinden önceki `schema.sql` ile kurulduysa yeni tabloları ekle:
+
+```bash
+psql -U postgres -d crossword -f db/upgrade-grammar-quiz.sql
+```
 
 ## Çalıştırma
 
@@ -95,3 +119,9 @@ dotnet run --project src/Crossword.Api
 | POST | `/api/sessions/{id}/check` | Harf/kelime/bulmaca kontrolü |
 | POST | `/api/sessions/{id}/reveal` | İpucu (harf aç) |
 | POST | `/api/sessions/{id}/submit` | Bitir; puan, XP, rozet |
+| GET | `/api/quiz` | Gramer testi özeti: bugünün testi, seri, konu istatistikleri |
+| POST | `/api/quiz/daily` | Günün testini aç / devam et |
+| POST | `/api/quiz/practice` | Konu pratiği başlat (`{ "topic": "subjunctive" }`) |
+| GET | `/api/quiz/{id}` | Testi getir |
+| POST | `/api/quiz/{id}/answers` | Cevapla (`{ "position": 0, "choice": 2 }`); doğru şık ve açıklama döner |
+| POST | `/api/quiz/questions/{id}/report` | Soruyu hatalı olarak bildir |
