@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <None Include="..\..\src\Crossword.Infrastructure\Persistence\Seed\words-*.txt" LinkBase="Seed" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\src\Crossword.Infrastructure\Persistence\Seed\quiz-*.txt" LinkBase="Seed" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>

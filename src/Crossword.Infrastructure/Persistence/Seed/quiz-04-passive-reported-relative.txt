@@ -1,0 +1,78 @@
+# Grammar quiz question bank: Passive, causative, reported speech, relative clauses
+# key | topic | level | prompt (gap = ___) | A | B | C | D | answer | explanation (Turkish)
+
+pv-01 | passive | B1 | This bridge ___ in 1890. | was built | built | has built | is building | A | Köprü kendini inşa etmez, yani edilgen yapı gerekir. 1890 geçmişte: was built.
+pv-02 | passive | B1 | English ___ in many countries around the world. | speaks | is speaking | is spoken | has spoken | C | Genel gerçek + edilgen: is spoken.
+pv-03 | passive | B2 | The new hospital ___ at the moment. | is building | is being built | has built | builds | B | at the moment + edilgen: Present Continuous Passive (is being built).
+pv-04 | passive | B2 | The letters ___ yet. | haven't sent | didn't send | aren't sending | haven't been sent | D | yet + edilgen: Present Perfect Passive (haven't been sent).
+pv-05 | passive | B2 | The report must ___ by Friday. | finish | be finishing | finished | be finished | D | Modal + edilgen: must be + V3.
+pv-06 | passive | B2 | My car ___ last night. | stole | was stolen | has stolen | was stealing | B | Araba çalınır, yani edilgen. last night geçmiş: was stolen.
+pv-07 | passive | B2 | The results ___ next week. | will be announced | will announce | are announcing | announce | A | Gelecek + edilgen: will be + V3.
+pv-08 | passive | C1 | By the time we arrived, all the tickets ___. | sold | have been sold | had been sold | were selling | C | Geçmişteki bir andan önce tamamlanmış + edilgen: Past Perfect Passive.
+pv-09 | passive | B1 | ___ this book written by a Turkish author? | Did | Has | Was | Is it | C | Geçmiş edilgen soru: Was + özne + V3?
+pv-10 | passive | C1 | The meeting is going to ___ until next month. | be postponed | postpone | postponed | being postponed | A | be going to + edilgen: be going to be + V3.
+pv-11 | passive | B2 | The window ___ by the children while they were playing football. | broke | was broken | has broken | was breaking | B | by the children, eylemi yapanı gösterir: edilgen (was broken).
+pv-12 | passive | C1 | The suspect ___ by the police for several hours when his lawyer arrived. | was questioning | has been questioned | had questioned | had been questioned | D | Avukat gelmeden önce saatlerce sorgulanmıştı: Past Perfect Passive.
+pv-13 | passive | B2 | A lot of new houses ___ in this area since 2015. | have been built | were built | have built | are building | A | since + edilgen: Present Perfect Passive.
+pv-14 | passive | B2 | Smoking is not ___ in this building. | allow | allowing | to allow | allowed | D | be + V3: is not allowed (izin verilmiyor).
+pv-15 | passive | C1 | The patient ___ to hospital as soon as possible. | needs be taken | needs take | needs to be taken | needs to take | C | need + edilgen: needs to be taken.
+pv-16 | passive | B2 | I was ___ a lot of questions during the interview. | asking | asked | ask | to ask | B | Kişi nesneli edilgen yapı: I was asked questions (bana sorular soruldu).
+pv-17 | passive | C1 | The problem ___ discussed at the next board meeting. | will | is going | has | will be | D | Gelecek + edilgen: will be discussed.
+pv-18 | passive | C1 | The castle, which ___ in the 12th century, attracts thousands of tourists. | was built | built | has been built | is built | A | 12. yüzyıl belirli bir geçmiş zaman + edilgen: was built.
+
+cau-01 | causative | B2 | I'm going to ___ my car serviced tomorrow. | make | have | let | do | B | Causative: have + nesne + V3 (başkasına yaptırmak).
+cau-02 | causative | B2 | She had her hair ___ yesterday. | cutting | to cut | cuts | cut | D | have + nesne + V3: had her hair cut (saçını kestirdi).
+cau-03 | causative | C1 | He is believed ___ the country last month. | to have left | to leave | leaving | having left | A | is believed + geçmiş olay (last month): to have + V3.
+cau-04 | causative | B2 | We got the house ___ before we moved in. | paint | to paint | painted | painting | C | get + nesne + V3: evi boyattık.
+cau-05 | causative | C1 | It ___ that the company will cut 500 jobs. | is reported | reports | is reporting | has reported | A | It is reported / said / believed that... (bildiriliyor ki).
+cau-06 | causative | C1 | The president is said ___ seriously ill at the moment. | to have been | being | to be | be | C | is said + şimdiki durum (at the moment): to be.
+cau-07 | causative | B2 | Where did you ___ your photos printed? | make | do | let | get | D | get + nesne + V3: fotoğraflarını nerede bastırdın?
+cau-08 | causative | C1 | I'll have the technician ___ the printer this afternoon. | to fix | fix | fixed | fixing | B | have + kişi + yalın fiil: teknisyene tamir ettireceğim.
+cau-09 | causative | B2 | My brother had his wallet ___ on the bus. | steal | to steal | stolen | stealing | C | have + nesne + V3, başa gelen kötü bir olay için de kullanılır: cüzdanı çalındı.
+cau-10 | causative | C1 | She is thought ___ the best candidate for the job. | to be | being | be | to being | A | is thought + şimdiki durum: to be.
+cau-11 | causative | C1 | The suspect is known ___ in the city before the robbery. | being | to be | have been | to have been | D | Soygundan önce, yani geçmiş: is known + to have been.
+cau-12 | causative | C1 | I finally got my landlord ___ the broken heating. | repair | to repair | repaired | repairing | B | get + kişi + to V: birini bir şeyi yapmaya ikna etmek.
+cau-13 | causative | C1 | It is widely believed that the economy ___ next year. | will recover | to recover | recovering | be recovered | A | It is believed that + tam cümle: the economy will recover.
+cau-14 | causative | B2 | You should have your eyes ___. | test | to test | testing | tested | D | have + nesne + V3: gözlerini muayene ettirmelisin.
+cau-15 | causative | C1 | The paintings are thought ___ in the 1920s. | to paint | to have been painted | to be painting | painting | B | Geçmiş + edilgen: to have been + V3.
+cau-16 | causative | C1 | There ___ to be over a hundred people trapped in the building. | says | is saying | are said | said | C | There are said to be...: ...olduğu söyleniyor.
+cau-17 | causative | B2 | We're having a new kitchen ___ next month. | installed | install | to install | installing | A | have + nesne + V3: yeni mutfak taktırıyoruz.
+cau-18 | causative | C2 | He is reported ___ for the company for over 20 years. | to work | working | to have been working | worked | C | Geçmişten beri süren eylem: to have been + V-ing.
+
+rs-01 | reported-speech | B2 | "I will call you tomorrow," she said. → She said she ___ me the next day. | will call | calls | would call | has called | C | Backshift: will, would olur. tomorrow da the next day olur.
+rs-02 | reported-speech | B2 | He asked me where ___. | I lived | did I live | do I live | I am living | A | Aktarılan sorularda düz cümle sırası kullanılır (do/did kalkar) ve zaman bir geri gider: where I lived.
+rs-03 | reported-speech | B2 | "Don't touch anything," the officer told us. → The officer told us ___ anything. | don't touch | not touch | to not touching | not to touch | D | Olumsuz emir aktarılırken: tell someone not to + V.
+rs-04 | reported-speech | B2 | She asked me ___ I had finished the report. | that | whether | what | did | B | Evet/hayır soruları if ya da whether ile aktarılır.
+rs-05 | reported-speech | B2 | "I'm tired," he said yesterday. → Yesterday he said that he ___ tired. | is | was | has been | will be | B | Backshift: am, was olur.
+rs-06 | reported-speech | C1 | "I saw her yesterday," he told me. → He told me he ___ her the day before. | has seen | would see | sees | had seen | D | Past Simple aktarılırken Past Perfect olur. yesterday da the day before olur.
+rs-07 | reported-speech | B2 | She asked me how long ___ in Ankara. | I had lived | had I lived | did I live | have I lived | A | Aktarılan soruda düz sıra: how long I had lived.
+rs-08 | reported-speech | B2 | "Can you help me?" she asked. → She asked if I ___ help her. | may | will | could | did | C | Backshift: can, could olur.
+rs-09 | reported-speech | C1 | He apologised for ___ late. | being | to be | be | was | A | apologise for + V-ing.
+rs-10 | reported-speech | B2 | The teacher asked us ___ our books. | open | opening | that we open | to open | D | Rica ve emir aktarılırken: ask someone to + V.
+rs-11 | reported-speech | C1 | "You should see a doctor," she said to me. → She advised me ___ a doctor. | seeing | that see | to see | see | C | advise someone to + V.
+rs-12 | reported-speech | B2 | "Have you ever been to Japan?" he asked. → He asked me if I ___ to Japan. | have ever been | had ever been | ever went | was ever | B | Backshift: Present Perfect, Past Perfect olur.
+rs-13 | reported-speech | B2 | "We're leaving tomorrow," they said last month. → They said they were leaving ___. | tomorrow | yesterday | the day before | the following day | D | Zaman ifadesi de kayar: tomorrow, the next day / the following day olur.
+rs-14 | reported-speech | C1 | She denied ___ the money. | taking | to take | that took | take | A | deny + V-ing.
+rs-15 | reported-speech | B2 | "Where is the station?" he asked. → He asked me where the station ___. | is it | was it | was | did be | C | Aktarılan soruda düz sıra (özne + fiil) ve backshift: where the station was.
+rs-16 | reported-speech | C1 | He suggested ___ a taxi because it was raining. | to take | taking | take | us to take | B | suggest + V-ing. suggest someone to do yanlıştır.
+rs-17 | reported-speech | B2 | "I've lost my keys," she said. → She said she ___ her keys. | had lost | has lost | loses | was losing | A | Backshift: Present Perfect, Past Perfect olur.
+rs-18 | reported-speech | C1 | "What are you doing?" my mother asked. → My mother asked me what ___. | was I doing | am I doing | I am doing | I was doing | D | Düz sıra (I was doing) ve backshift (are, was olur).
+
+rc-01 | relative-clauses | B1 | The man ___ car was stolen called the police. | who | which | whom | whose | D | İyelik (arabası çalınan adam): whose.
+rc-02 | relative-clauses | B1 | The book ___ I bought yesterday is very interesting. | who | which | whose | where | B | Nesneler için which (ya da that).
+rc-03 | relative-clauses | B2 | The project, ___ was completed ahead of schedule, won an award. | that | what | which | whose | C | Virgülle ayrılan (non-defining) cümleciklerde that kullanılmaz: which.
+rc-04 | relative-clauses | B2 | The meeting was cancelled, ___ was a relief to everyone. | which | that | what | it | A | Önceki cümlenin tamamını niteleyen cümlecik: , which.
+rc-05 | relative-clauses | B1 | This is the hotel ___ we stayed last summer. | which | who | where | whose | C | Yer bildiren ve edat almayan cümlecik: where (= in which).
+rc-06 | relative-clauses | B2 | She's the woman ___ I told you about. | who | which | whose | where | A | Kişiler için who.
+rc-07 | relative-clauses | B2 | I don't understand ___ he said. | which | what | that | who | B | what = the thing that (söylediği şey).
+rc-08 | relative-clauses | C1 | The candidates, most of ___ had several years of experience, were interviewed. | who | which | them | whom | D | Edattan sonra kişiler için whom: most of whom.
+rc-09 | relative-clauses | B2 | Do you remember the day ___ we first met? | when | which | who | whose | A | Zaman bildiren cümlecik: when.
+rc-10 | relative-clauses | C1 | The reason ___ he left the company is still unclear. | which | what | why | where | C | the reason why: sebep bildiren kalıp.
+rc-11 | relative-clauses | B2 | My sister, ___ lives in Berlin, is a doctor. | that | which | whom | who | D | Virgüllü cümlecik + kişi + özne konumu: who (that kullanılmaz).
+rc-12 | relative-clauses | C1 | That's the colleague with ___ I share an office. | who | whom | that | which | B | Edattan sonra kişi için whom gelir (with whom). Edattan sonra that gelemez.
+rc-13 | relative-clauses | B2 | Everything ___ she said was true. | what | whose | that | who | C | everything, nothing, all gibi kelimelerden sonra that tercih edilir. what kullanılmaz.
+rc-14 | relative-clauses | C1 | He failed the exam, ___ surprised everyone. | which | that | what | who | A | Önceki cümlenin tamamını niteleyen: , which.
+rc-15 | relative-clauses | B2 | The children ___ parents work late stay at the after-school club. | who | which | whom | whose | D | İyelik (ebeveynleri geç saate kadar çalışan çocuklar): whose.
+rc-16 | relative-clauses | C1 | Is there anything ___ I can do to help? | what | that | who | whose | B | anything'den sonra that kullanılır.
+rc-17 | relative-clauses | B2 | The city ___ I was born has changed a lot. | where | which | when | who | A | Yer bildiren cümlecik: where (= in which).
+rc-18 | relative-clauses | C1 | I have two brothers, both of ___ are engineers. | who | them | whom | which | C | both of / some of / most of + whom (kişiler için).

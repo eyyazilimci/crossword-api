@@ -1,0 +1,97 @@
+# Grammar quiz question bank: Conditionals, wish, unreal past, subjunctive
+# key | topic | level | prompt (gap = ___) | A | B | C | D | answer | explanation (Turkish)
+
+cond-01 | conditionals | A2 | If you heat ice, it ___. | melts | will melted | melted | melting | A | 0. tip conditional (genel gerçek): If + Present Simple, Present Simple.
+cond-02 | conditionals | B1 | If it ___ tomorrow, we'll stay at home. | will rain | rained | would rain | rains | D | 1. tip: If + Present Simple, will + V. if cümlesinde will kullanılmaz.
+cond-03 | conditionals | B1 | If I ___ more time, I would learn to play the guitar. | have | had | will have | would have | B | 2. tip (şimdiki gerçek dışı durum): If + Past Simple, would + V.
+cond-04 | conditionals | B2 | If she had studied harder, she ___ the exam. | would pass | will pass | would have passed | passed | C | 3. tip (geçmişe ait gerçek dışı durum): If + Past Perfect, would have + V3.
+cond-05 | conditionals | B1 | I ___ you if I knew the answer. | will tell | tell | would tell | would have told | C | 2. tip: if tarafında Past Simple (knew), ana cümlede would + V.
+cond-06 | conditionals | B2 | If I ___ you, I would accept the offer. | am | were | will be | have been | B | Tavsiye kalıbı: If I were you. Resmî İngilizcede ve sınavlarda tüm öznelerle were kullanılır.
+cond-07 | conditionals | B2 | We would have caught the train if we ___ earlier. | had left | left | would leave | have left | A | 3. tip: would have caught + if + Past Perfect.
+cond-08 | conditionals | B1 | Unless you ___ now, you'll miss the bus. | won't leave | don't leave | didn't leave | leave | D | unless = if not. Kendisi olumsuz anlam taşıdığı için ardından olumlu fiil gelir.
+cond-09 | conditionals | B2 | What ___ if you won a million dollars? | will you do | do you do | did you do | would you do | D | 2. tip: if + Past Simple (won), ana cümlede would.
+cond-10 | conditionals | B2 | If he ___ the email, he would have replied. | had received | received | has received | would receive | A | 3. tip: ana cümlede would have replied var, if tarafı Past Perfect olur.
+cond-11 | conditionals | C1 | ___ you need any help, just give me a call. | Had | Were | Should | Would | C | Should + özne + V = If + özne + V. Resmî bir 1. tip conditional biçimidir.
+cond-12 | conditionals | C1 | ___ I known about the problem, I would have helped. | Should | Had | Were | Did | B | Had + özne + V3 = If + özne + had + V3 (3. tip, inversion).
+cond-13 | conditionals | B2 | You can borrow my car ___ you drive carefully. | unless | as long as | in case | even | B | as long as = şartıyla. unless "-mezsen" anlamına gelir ve burada anlamı bozar.
+cond-14 | conditionals | C1 | ___ it not been for your help, I would never have finished on time. | Were | Should | Did | Had | D | Had it not been for = If it hadn't been for (3. tip, inversion).
+cond-15 | conditionals | B1 | If you mix red and white, you ___ pink. | get | got | would got | getting | A | 0. tip: her zaman geçerli sonuç, iki tarafta da Present Simple.
+cond-16 | conditionals | B2 | If they ___ the warning, the accident wouldn't have happened. | ignored | didn't ignore | hadn't ignored | wouldn't ignore | C | 3. tip: if + Past Perfect (hadn't ignored), would have + V3.
+cond-17 | conditionals | B2 | I'll lend you the money ___ you pay me back next week. | unless | otherwise | in case of | provided that | D | provided (that) = şartıyla. in case of ardından isim alır, cümle almaz.
+cond-18 | conditionals | C1 | If it ___ for the traffic, we would be there by now. | weren't | isn't | wouldn't be | won't be | A | If it weren't for... (olmasaydı): şimdiki zamana ait gerçek dışı durum. by now ana cümlenin şimdiyi anlattığını gösterir.
+
+mix-01 | mixed-conditionals | C1 | If I had taken that job, I ___ in Istanbul now. | will live | would be living | had lived | would have lived | B | Geçmiş koşul (had taken), şimdiki sonuç (now): mixed conditional, ana cümle would + V (would be living).
+mix-02 | mixed-conditionals | C1 | If she weren't so shy, she ___ to him at the party last night. | would talk | talks | had talked | would have talked | D | Kalıcı bir özellik (weren't so shy), geçmişteki sonuç (last night): would have + V3.
+mix-03 | mixed-conditionals | C1 | If I hadn't missed the flight, I ___ in Rome right now. | would be | will be | would have been | am | A | Geçmiş koşul ve şimdiki sonuç (right now): would + V.
+mix-04 | mixed-conditionals | C1 | If he spoke English, he ___ that job last year. | would get | will get | would have got | had got | C | Genel durum (spoke English) ve geçmişteki sonuç (last year): would have got.
+mix-05 | mixed-conditionals | C1 | If we had bought the house in 2015, it ___ twice as much now. | would be worth | would have been worth | will be worth | is worth | A | 2015'teki koşul, şimdiki sonuç (now): would be.
+mix-06 | mixed-conditionals | C1 | If you weren't so stubborn, we ___ that argument yesterday. | wouldn't have | won't have | hadn't had | wouldn't have had | D | Kalıcı özellik (weren't so stubborn) ve geçmişteki sonuç (yesterday): wouldn't have had.
+mix-07 | mixed-conditionals | C1 | If I ___ to the doctor last week, I wouldn't still be ill. | went | go | had gone | would go | C | Geçmiş koşul (last week): Past Perfect. Şimdiki sonuç (still be ill): would + V.
+mix-08 | mixed-conditionals | C2 | If he ___ such a careless person, he wouldn't have lost the documents. | was being | were | would be | is | B | Kalıcı bir özellik (careless person) için şimdiki gerçek dışı durum: were. Sonuç geçmişte: wouldn't have lost.
+mix-09 | mixed-conditionals | C1 | She ___ fluent French now if she had stayed in Paris. | would have spoken | will speak | speaks | would speak | D | Geçmiş koşul (had stayed), şimdiki sonuç (now): would speak.
+mix-10 | mixed-conditionals | C1 | If I had saved more money when I was younger, I ___ worried about retirement now. | wouldn't be | won't be | wouldn't have been | am not | A | Geçmiş koşul ve şimdiki sonuç (now): wouldn't be.
+mix-11 | mixed-conditionals | C2 | If I ___ afraid of heights, I would have gone skydiving with you last summer. | haven't been | weren't | wouldn't be | am not | B | Kalıcı korku (şimdi de var): weren't. Geçmişteki sonuç: would have gone.
+mix-12 | mixed-conditionals | C1 | If you had listened to my advice, you ___ in this mess now. | wouldn't have been | won't be | wouldn't be | aren't | C | Geçmiş koşul ve şimdiki sonuç (now): wouldn't be.
+mix-13 | mixed-conditionals | C1 | If she ___ the lottery last year, she would be travelling around the world now. | won | wins | would win | had won | D | Geçmişteki koşul (last year): Past Perfect (had won).
+mix-14 | mixed-conditionals | C2 | If I were a better cook, I ___ a big dinner for everyone last night. | would have made | would make | had made | will make | A | Genel özellik (were a better cook), geçmişteki sonuç (last night): would have made.
+mix-15 | mixed-conditionals | C1 | If they had left on time, they ___ here by now. | will be | had been | would be | are | C | Geçmiş koşul (had left), şimdiki sonuç (by now): would be.
+mix-16 | mixed-conditionals | C1 | If I ___ you, I wouldn't have said that to your boss. | am | were | had been | will be | B | If I were you sabit bir tavsiye kalıbıdır; sonuç geçmişte olsa bile were kullanılır.
+mix-17 | mixed-conditionals | C1 | If the company hadn't gone bankrupt, he ___ still ___ there. | would / be working | will / work | would / have worked | had / worked | A | Geçmiş koşul ve hâlâ sürecek olan şimdiki sonuç (still): would still be working.
+mix-18 | mixed-conditionals | C2 | He ___ the promotion last month if he were more confident in meetings. | will get | would get | gets | would have got | D | Genel özellik (were more confident), geçmişteki sonuç (last month): would have got.
+
+wish-01 | wish-if-only | B1 | I wish I ___ a car. Taking the bus every day is exhausting. | have | will have | had | am having | C | Şimdiki durumdan şikâyet: wish + Past Simple.
+wish-02 | wish-if-only | B2 | I wish I ___ to the party last night. Everyone says it was great. | had gone | went | would go | have gone | A | Geçmişe pişmanlık (last night): wish + Past Perfect.
+wish-03 | wish-if-only | B2 | I wish you ___ making that noise! It's driving me crazy. | stop | would stop | stopped | had stopped | B | Birinin davranışından rahatsızlık ve değişmesini isteme: wish + would.
+wish-04 | wish-if-only | B1 | I wish I ___ speak Japanese. | can | will | am able | could | D | Şimdi yapamadığın bir şey: wish + could.
+wish-05 | wish-if-only | B2 | If only I ___ more attention in class last year! | paid | would pay | have paid | had paid | D | if only = wish. Geçmişe pişmanlık (last year): Past Perfect.
+wish-06 | wish-if-only | B2 | I wish it ___ so cold today. | weren't | isn't | won't be | hasn't been | A | Şimdiki durum için wish + Past Simple; be fiili için were kullanılır.
+wish-07 | wish-if-only | C1 | She wishes she ___ that comment to her boss yesterday. | didn't make | wouldn't make | hadn't made | doesn't make | C | yesterday, yani geçmişe pişmanlık: wish + Past Perfect.
+wish-08 | wish-if-only | B2 | If only he ___ here now; he would know what to do. | is | were | will be | has been | B | Şimdiye ait gerçek dışı dilek (now): if only + were.
+wish-09 | wish-if-only | C1 | I wish my neighbours ___ their music so loud every night. | wouldn't play | don't play | didn't played | won't play | A | Başkalarının alışkanlığından şikâyet: wish + wouldn't.
+wish-10 | wish-if-only | B2 | Do you ever wish you ___ in a different country? | live | will live | lived | are living | C | Şimdiki durum için dilek: wish + Past Simple.
+wish-11 | wish-if-only | C1 | I wish I ___ so much money on clothes last month. | didn't spend | wouldn't spend | haven't spent | hadn't spent | D | last month, yani geçmişe pişmanlık: wish + Past Perfect.
+wish-12 | wish-if-only | B2 | I wish you ___ me earlier. I could have helped you. | told | had told | would tell | tell | B | Geçmişe ait dilek (earlier, could have helped): wish + Past Perfect.
+wish-13 | wish-if-only | C1 | If only the bus ___! We've been waiting for forty minutes. | comes | has come | would come | is coming | C | Elde olmayan bir durumun değişmesini isteme (sabırsızlık): if only + would.
+wish-14 | wish-if-only | B2 | I wish I ___ taller. | were | am | will be | would be | A | Şimdiki durumdan şikâyet; be fiili için were. Kendi özelliğin için would kullanılmaz.
+wish-15 | wish-if-only | C1 | He wishes he ___ to his parents' advice when he was young. | listened | had listened | would listen | listens | B | when he was young, geçmişi gösterir: wish + Past Perfect.
+wish-16 | wish-if-only | B1 | I wish I ___ the answer, but I have no idea. | know | will know | am knowing | knew | D | Şimdiki durum (bilmiyorum): wish + Past Simple.
+wish-17 | wish-if-only | C1 | I wish you ___ always interrupt me when I'm speaking. | wouldn't | don't | won't | haven't | A | Rahatsız edici bir alışkanlıktan şikâyet: wish + wouldn't.
+wish-18 | wish-if-only | B2 | If only I ___ my umbrella this morning! Now I'm soaking wet. | took | would take | had taken | have taken | C | this morning (geçmiş) için pişmanlık: if only + Past Perfect.
+
+ur-01 | unreal-past | B2 | It's time we ___ home. It's getting late. | go | will go | are going | went | D | It's time + özne + Past Simple: artık yapma zamanı geldi (ama yapmıyoruz).
+ur-02 | unreal-past | B2 | I'd rather you ___ anyone about this. | don't tell | didn't tell | not tell | won't tell | B | I'd rather + başka bir özne + Past Simple (şimdi ya da gelecek için).
+ur-03 | unreal-past | B2 | I'd rather ___ at home tonight; I'm exhausted. | stay | stayed | to stay | staying | A | Özne aynıysa I'd rather + yalın fiil gelir.
+ur-04 | unreal-past | C1 | He talks as if he ___ the boss, but he's just an intern. | is being | has been | were | will be | C | as if + gerçek olmayan benzetme (aslında stajyer): were.
+ur-05 | unreal-past | C1 | It's high time the government ___ something about rising prices. | does | did | has done | do | B | It's high time + Past Simple: bunu çoktan yapmış olmaları gerekirdi.
+ur-06 | unreal-past | C1 | Suppose you ___ the lottery. What would you do with the money? | win | will win | had won | won | D | Suppose + Past Simple + would: şimdi ya da gelecekle ilgili hayal.
+ur-07 | unreal-past | C1 | She looked as if she ___ a ghost. | had seen | has seen | saw | sees | A | Ana fiil geçmişte (looked); hayalet görmek ondan daha önce: as if + Past Perfect.
+ur-08 | unreal-past | C1 | I'd rather you ___ me the truth yesterday instead of lying. | told | tell | had told | would tell | C | I'd rather + başka özne + geçmiş (yesterday): Past Perfect.
+ur-09 | unreal-past | B2 | It's about time you ___ responsibility for your own actions. | take | have taken | took | will take | C | It's about time de It's high time gibi çalışır: + Past Simple.
+ur-10 | unreal-past | C1 | Suppose you ___ that job offer in London last year. Where would you be living now? | had accepted | accepted | accept | would accept | A | last year, yani geçmişe ait hayal: Suppose + Past Perfect. now olduğu için sonuç would + V (mixed).
+ur-11 | unreal-past | C1 | He behaves as though he ___ everything, but he knows very little. | knows | has known | will know | knew | D | as though + gerçek olmayan benzetme (aslında çok az biliyor): Past Simple.
+ur-12 | unreal-past | B2 | Would you rather we ___ the meeting until next week? | postpone | postponed | will postpone | postponing | B | Would you rather + başka özne + Past Simple.
+ur-13 | unreal-past | C1 | What if he ___ the truth? We'd all be in trouble. | found out | finds out | will find out | had found out | A | What if + Past Simple + would ('d): şimdi ya da gelecekle ilgili hayalî durum.
+ur-14 | unreal-past | C1 | He looked as though he ___ all night. | haven't slept | didn't sleep | hadn't slept | doesn't sleep | C | Ana fiil geçmişte (looked), uykusuzluk ondan önce: as though + Past Perfect.
+ur-15 | unreal-past | B2 | I'd rather not ___ about it right now, if you don't mind. | talked | talk | to talk | talking | B | Özne aynı (I): I'd rather not + yalın fiil.
+ur-16 | unreal-past | C1 | It's time the children ___ to bed. | go | have gone | will go | went | D | It's time + özne + Past Simple.
+ur-17 | unreal-past | C2 | Imagine you ___ in the 18th century. How different would your life be? | live | will live | lived | would live | C | Imagine + Past Simple + would: hayalî durum.
+ur-18 | unreal-past | C1 | She treats me as if I ___ a child. | were | am being | have been | will be | A | as if + gerçek olmayan benzetme (çocuk değilim): were.
+
+subj-01 | subjunctive | C1 | The doctor recommended that he ___ smoking immediately. | stops | stop | stopped | will stop | B | recommend that + yalın fiil (subjunctive). 3. tekil şahısta bile -s gelmez.
+subj-02 | subjunctive | C1 | It is essential that every employee ___ the safety training. | completes | completed | complete | will complete | C | It is essential that + yalın fiil: every employee complete. -s eki gelmez.
+subj-03 | subjunctive | C1 | The committee insisted that the report ___ by Friday. | be submitted | is submitted | was submitted | will be submitted | A | insist that + yalın fiil; edilgen yapıda be + V3.
+subj-04 | subjunctive | C1 | I suggest that she ___ a lawyer before signing the contract. | consults | consulted | will consult | consult | D | suggest that + yalın fiil: she consult.
+subj-05 | subjunctive | C1 | It is vital that the patient ___ any food before the operation. | doesn't eat | didn't eat | not eat | won't eat | C | Subjunctive'in olumsuzu not + yalın fiil ile yapılır, do/does kullanılmaz: not eat.
+subj-06 | subjunctive | C2 | The board demanded that the CEO ___ immediately. | resigns | resign | resigned | has resigned | B | demand that + yalın fiil: the CEO resign.
+subj-07 | subjunctive | C1 | It's important that he ___ on time for the interview. | was | has been | will be | be | D | It's important that + yalın fiil; be fiilinin yalın hâli be.
+subj-08 | subjunctive | C1 | They proposed that the meeting ___ until next month. | be postponed | has postponed | was postponed | postpones | A | propose that + yalın fiil; edilgen: be postponed.
+subj-09 | subjunctive | C1 | She insisted that her son ___ the truth. | tells | tell | telling | will tell | B | insist that + yalın fiil: her son tell.
+subj-10 | subjunctive | C2 | It is recommended that all passengers ___ at the airport two hours before departure. | arrive will | are arriving | arrived | arrive | D | It is recommended that + yalın fiil.
+subj-11 | subjunctive | C1 | My teacher suggested ___ more English films. | me to watch | I watching | watching | to watch | C | suggest + V-ing kalıbı. suggest someone to do yanlıştır (doğrusu suggested that I watch).
+subj-12 | subjunctive | C1 | It is necessary that she ___ informed of the changes. | be | is being | was | will | A | It is necessary that + yalın fiil; edilgen: be informed.
+subj-13 | subjunctive | C2 | The law requires that every driver ___ insurance. | has got | had | will have | have | D | require that + yalın fiil: every driver have.
+subj-14 | subjunctive | C1 | He asked that his name ___ from the list. | is removed | be removed | removing | removes | B | ask that (rica etmek) + yalın fiil; edilgen: be removed.
+subj-15 | subjunctive | C1 | The manager recommended ___ the project into smaller tasks. | dividing | to divide | divide | divided | A | recommend + V-ing. recommend to do yanlıştır.
+subj-16 | subjunctive | C2 | It is crucial that the company ___ its prices this year. | doesn't raise | didn't raise | not raise | won't raise | C | Subjunctive'in olumsuzu: not + yalın fiil.
+subj-17 | subjunctive | C1 | The teacher insisted that the students ___ quiet during the exam. | be | being | have been | will be | A | insist that + yalın fiil; be fiilinin yalın hâli be.
+subj-18 | subjunctive | C2 | It was suggested that he ___ the job on a trial basis. | takes | taking | will take | take | D | Ana cümle geçmişte olsa bile suggest that + yalın fiil kullanılır.

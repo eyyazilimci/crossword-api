@@ -1,0 +1,60 @@
+# Grammar quiz question bank: Articles, prepositions, quantifiers
+# key | topic | level | prompt (gap = ___) | A | B | C | D | answer | explanation (Turkish)
+# "—" means no article.
+
+art-01 | articles | A2 | She is ___ engineer. | an | a | the | — | A | Meslekler için a/an kullanılır; engineer sesli harfle başladığı için an.
+art-02 | articles | B1 | ___ sun rises in the east. | A | An | The | — | C | Tek olan şeyler (the sun, the moon) the alır.
+art-03 | articles | B1 | I love ___ music, especially jazz. | the | a | an | — | D | Genel anlamda sayılamayan isimler artikelsiz kullanılır.
+art-04 | articles | B1 | We had ___ dinner at a nice restaurant last night. | the | — | a | an | B | Öğün isimleri (breakfast, lunch, dinner) önlerinde sıfat yoksa artikel almaz.
+art-05 | articles | B2 | ___ rich should pay more taxes. | A | The | An | — | B | the + sıfat bir grubu anlatır: the rich (zenginler), the poor.
+art-06 | articles | B2 | Mount Everest is the highest mountain in ___ world. | a | an | — | the | D | Tek olan şeyler the alır: the world.
+art-07 | articles | B1 | I've got ___ idea! Let's go to the beach. | an | a | the | — | A | İlk kez söz edilen tekil isim a/an alır; idea sesli harfle başladığı için an.
+art-08 | articles | B2 | ___ Netherlands is famous for its tulips. | — | A | The | An | C | Çoğul ülke adları ve birlik bildiren adlar the alır: the Netherlands, the USA.
+art-09 | articles | B2 | ___ honest man always tells the truth. | A | The | An | — | C | Seçim yazıma göre değil sese göre yapılır: honest sesli bir sesle başlar (h okunmaz), bu yüzden an.
+art-10 | articles | B2 | Can you pass me ___ salt, please? | the | a | an | — | A | Konuşanların ikisinin de bildiği belirli nesne (masadaki tuz): the.
+art-11 | articles | B1 | ___ Lake Van is the largest lake in Turkey. | A | The | An | — | D | Lake + isim kalıbındaki göl adları artikel almaz: Lake Van.
+art-12 | articles | C1 | She has ___ unusual name. | a | an | the | — | B | Sıfat sesli harfle başlıyorsa an: an unusual name.
+art-13 | articles | B2 | ___ Amazon is the longest river in South America. | The | A | An | — | A | Nehir adları the alır: the Amazon, the Nile.
+art-14 | articles | B1 | It takes about ___ hour to get there. | a | the | — | an | D | hour sesli bir sesle başlar (h okunmaz): an hour.
+art-15 | articles | C1 | ___ more you read, the better you write. | A | — | The | An | C | The + comparative, the + comparative kalıbı: The more ..., the better ...
+art-16 | articles | B2 | I usually go to work by ___ bus. | the | — | a | an | B | by + ulaşım aracı artikel almaz: by bus, by car.
+art-17 | articles | B2 | What ___ beautiful day! | a | the | — | an | A | What + a/an + sıfat + tekil isim: What a beautiful day!
+art-18 | articles | B2 | He's one of ___ best players in the league. | a | most | the | — | C | one of the + üstünlük: one of the best.
+
+prep-01 | prepositions | B1 | I'm really interested ___ history. | on | in | at | about | B | be interested in.
+prep-02 | prepositions | B1 | She's very good ___ languages. | in | on | with | at | D | be good at.
+prep-03 | prepositions | B1 | It depends ___ the weather. | on | of | from | at | A | depend on.
+prep-04 | prepositions | B2 | I'm not used ___ working at night. | for | with | to | at | C | be used to + V-ing.
+prep-05 | prepositions | B1 | We arrived ___ the airport two hours early. | to | in | at | on | C | Bina ya da nokta gibi yerlere varmak: arrive at. Şehir ya da ülkeye varmak: arrive in. arrive to kullanılmaz.
+prep-06 | prepositions | B1 | My birthday is ___ 5th May. | on | in | at | to | A | Tarihler ve günler on alır: on 5th May, on Monday.
+prep-07 | prepositions | B2 | He apologised ___ being late. | about | for | of | to | B | apologise for + V-ing.
+prep-08 | prepositions | B2 | She is married ___ a doctor. | with | for | by | to | D | be married to (with değil).
+prep-09 | prepositions | B2 | I've been waiting ___ you for an hour! | for | to | on | at | A | wait for someone.
+prep-10 | prepositions | B2 | The decision was ___ my control. | over | under | beyond | out | C | beyond my control: elimde değil.
+prep-11 | prepositions | C1 | He was accused ___ stealing the money. | for | with | about | of | D | accuse someone of + V-ing.
+prep-12 | prepositions | B2 | I'm looking forward ___ the holidays. | for | to | at | on | B | look forward to + isim ya da V-ing.
+prep-13 | prepositions | B2 | We'll finish the project ___ Friday at the latest. | by | until | till | since | A | by = en geç ...e kadar (son tarih). until bir durumun ne zamana kadar sürdüğünü anlatır.
+prep-14 | prepositions | C1 | She succeeded ___ passing the exam. | to | at | on | in | D | succeed in + V-ing.
+prep-15 | prepositions | B2 | I saw him ___ the first time in 2015. | in | at | for | on | C | for the first time: ilk kez.
+prep-16 | prepositions | B1 | The meeting is ___ 3 pm. | in | at | on | by | B | Saatler at alır: at 3 pm.
+prep-17 | prepositions | C1 | The new law will come ___ effect next month. | into | in | to | at | A | come into effect: yürürlüğe girmek.
+prep-18 | prepositions | B2 | She's afraid ___ spiders. | from | to | of | for | C | be afraid of (from değil).
+
+q-01 | quantifiers | A2 | How ___ money do you have? | many | few | lot | much | D | Sayılamayan isimler (money) için much.
+q-02 | quantifiers | B1 | There are ___ people in the room. Only two or three. | a little | a few | many | much | B | Sayılabilen çoğul isimlerle "birkaç" anlamında a few.
+q-03 | quantifiers | B1 | I have ___ time, so I can help you. | a little | a few | many | few | A | Sayılamayan isim + "biraz var" (olumlu anlam): a little.
+q-04 | quantifiers | B2 | ___ of my friends came to the party; I was very disappointed. | Little | A little | Few | A few | C | few = çok az, yetersiz (olumsuz anlam). Hayal kırıklığı bu anlamı destekliyor.
+q-05 | quantifiers | B1 | There isn't ___ milk left. | much | many | a few | few | A | Sayılamayan isim + olumsuz cümle: much.
+q-06 | quantifiers | B2 | ___ student in the class passed the exam. | All | Most | Every | Many | C | every + tekil isim (student). all, most ve many çoğul isim ister.
+q-07 | quantifiers | B2 | I have two sisters, but ___ of them lives nearby. | none | no | any | neither | D | İki kişiden hiçbiri: neither of them.
+q-08 | quantifiers | B2 | You can take ___ seat you like. | some | any | many | every | B | any = hangisi olursa (istediğin herhangi biri).
+q-09 | quantifiers | B2 | ___ of the two answers is correct; they're both wrong. | Both | Either | Neither | None | C | İkisinden hiçbiri: Neither.
+q-10 | quantifiers | B1 | Is there ___ coffee left? | any | many | a few | few | A | Soru cümlesinde sayılamayan isimle any.
+q-11 | quantifiers | B2 | We have ___ information about the project. | many | a lot of | a few | few | B | information sayılamaz: a lot of / much ile kullanılır, many ve few ile kullanılmaz.
+q-12 | quantifiers | C1 | ___ of the employees has a parking space. | All | Most | Many | Each | D | Fiil tekil (has): Each of + çoğul isim + tekil fiil.
+q-13 | quantifiers | B2 | There were ___ cars on the road that we arrived late. | so many | so much | such | too much | A | Sayılabilen çoğul isim + that: so many ... that.
+q-14 | quantifiers | B2 | I don't have ___ friends in this city. | much | little | a little | many | D | Sayılabilen çoğul isim + olumsuz cümle: many.
+q-15 | quantifiers | C1 | ___ effort has been made to solve the problem. | Many | A few | Much | Few | C | effort burada sayılamaz ve fiil tekil (has): Much.
+q-16 | quantifiers | B2 | Hardly ___ came to the meeting. | nobody | anybody | somebody | everybody | B | hardly zaten olumsuzdur, ardından any- gelir: hardly anybody (neredeyse hiç kimse).
+q-17 | quantifiers | C1 | ___ of them knew the answer, so we asked the teacher. | None | No | Any | Every | A | Hiçbiri: None of them. no ve every of ile kullanılmaz.
+q-18 | quantifiers | B2 | There's ___ room in the car for one more person. | few | many | enough | several | C | room (yer) burada sayılamaz: enough room.
