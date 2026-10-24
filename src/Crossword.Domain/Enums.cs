@@ -51,3 +51,12 @@ public enum SessionStatus
     InProgress = 1,
     Completed = 2,
 }
+
+public enum QuizKind
+{
+    /// <summary>The day's questions, picked from weak topics and missed questions.</summary>
+    Daily = 1,
+
+    /// <summary>Free practice on one topic.</summary>
+    Practice = 2,
+}
