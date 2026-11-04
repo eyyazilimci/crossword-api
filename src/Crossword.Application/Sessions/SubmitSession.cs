@@ -12,7 +12,7 @@ namespace Crossword.Application.Sessions;
 /// <summary>Hands in the filled grid. When every letter is right the puzzle is scored and progress is updated.</summary>
 public sealed record SubmitSessionCommand(Guid SessionId, string Letters, int ElapsedSeconds) : ICommand<SubmitResult>;
 
-public sealed record WordResultDto(int Number, Orientation Orientation, string Clue, string Answer, bool Correct);
+public sealed record WordResultDto(int WordId, int Number, Orientation Orientation, string Clue, string Answer, bool Correct);
 
 public sealed record CompletionDto(
     ScoreBreakdown Score,
@@ -95,8 +95,8 @@ public sealed class SubmitSessionHandler(IAppDbContext db, IClock clock) : IComm
             }
 
             var correct = !session.WasMissed(entry, puzzle.Width);
-            m.Record(correct, now);
-            results.Add(new WordResultDto(entry.Number, entry.Orientation, entry.Clue, entry.Answer, correct));
+            m.RecordSeen(correct, now);
+            results.Add(new WordResultDto(entry.WordId, entry.Number, entry.Orientation, entry.Clue, entry.Answer, correct));
         }
 
         return results;

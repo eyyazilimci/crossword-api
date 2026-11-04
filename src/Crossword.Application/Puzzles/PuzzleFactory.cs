@@ -28,7 +28,7 @@ public sealed class PuzzleFactory(IAppDbContext db, IClock clock, ILogger<Puzzle
     }
 
     /// <summary>
-    /// Builds and stores a fresh puzzle. Words the player keeps missing get a higher priority so they come back.
+    /// Builds and stores a fresh puzzle, favouring words as described in <see cref="WordSelection"/>.
     /// </summary>
     public async Task<Puzzle> CreateAsync(
         GameMode mode,
@@ -41,12 +41,18 @@ public sealed class PuzzleFactory(IAppDbContext db, IClock clock, ILogger<Puzzle
         var mastery = await db.WordMasteries.AsNoTracking()
             .Where(m => m.Mode == mode)
             .ToDictionaryAsync(m => m.WordId, ct);
+        var now = clock.UtcNow;
 
         var pool = (await LoadCandidatesAsync(mode, ct))
             .Where(c => DifficultyBands.Contains(difficulty, c.Level))
+            .ToList();
+        var bandIds = pool.Select(c => c.WordId).ToHashSet();
+        var reviewWords = WordSelection.PickReviewWords(mastery.Values.Where(m => bandIds.Contains(m.WordId)), now);
+
+        pool = pool
             .Select(c =>
             {
-                var priority = mastery.TryGetValue(c.WordId, out var m) ? m.ReviewWeight * 2 : 1;
+                var priority = WordSelection.Priority(mastery.GetValueOrDefault(c.WordId), reviewWords.Contains(c.WordId), now);
                 return c with { Priority = priority + random.NextDouble() };
             })
             .ToList();

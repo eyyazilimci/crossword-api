@@ -33,7 +33,8 @@ tests/
 - **`LibraryPlanner`:** Bulmaca serisini üretir. Her bulmaca henüz kullanılmamış bir kelimeye sabitlenir, böylece **her kelime en az bir kez** kullanılır. Ardından her zorluk seviyesi için en az `MinPuzzlesPerDifficulty` bulmaca olacak şekilde tamamlar.
 - **Uygulama başlarken:** Mod başına zorluk başına 30 bulmaca üretilir; toplamda 2 mod × 4 seviye × 30 = 240 bulmaca. Listeye yeni kelime eklenirse onları kapsayan bulmacalar da açılışta üretilir. Kütüphane biterse yeni bulmaca anında üretilir.
 - **Günün bulmacası:** Zorluğu bir önceki günlük bulmacadaki başarıya göre seçilir (`DailyDifficultyPolicy`). Başarı = ipucu açılmadan ve kontrolde yanlış çıkmadan çözülen kelimelerin oranı. %90 ve üstü bir seviye yukarı, %70 altı bir seviye aşağı, arası aynı; bitirilmeyen bulmaca seviyeyi değiştirmez; ilk gün Kolay. Her mod ayrı takip edilir.
-- **Zayıf kelimeler:** Yanlış yaptığın kelimeler yeni bulmacalarda daha yüksek öncelik alır.
+- **Kelime seçimi:** Yeni bulmacalar önce hiç görülmemiş kelimeleri kullanır; son görülen kelimeler 30 gün içinde yavaşça yeniden öne çıkar.
+- **Bilinemeyen kelimeler:** Liste otomatik dolmaz, bulmaca sonunda sen seçersin. Seçilen kelimelerden en fazla 4'ü, son görülmelerinden 3 gün sonra bulmacaya geri döner.
 
 ## Kelime listesi
 
