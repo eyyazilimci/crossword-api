@@ -11,6 +11,8 @@ internal static class SessionEndpoints
 
     public sealed record CellsRequest(string Letters, int ElapsedSeconds, IReadOnlyList<int> Cells);
 
+    public sealed record UnknownWordsRequest(IReadOnlyList<int> WordIds);
+
     public static void MapSessionEndpoints(this IEndpointRouteBuilder app)
     {
         var group = app.MapGroup("/sessions").WithTags("Sessions");
@@ -35,5 +37,11 @@ internal static class SessionEndpoints
 
         group.MapPost("/{id:guid}/submit", async (Guid id, ProgressRequest request, ISender sender, CancellationToken ct) =>
             await sender.Send(new SubmitSessionCommand(id, request.Letters, request.ElapsedSeconds), ct));
+
+        group.MapPost("/{id:guid}/unknown-words", async (Guid id, UnknownWordsRequest request, ISender sender, CancellationToken ct) =>
+        {
+            await sender.Send(new MarkUnknownWordsCommand(id, request.WordIds), ct);
+            return Results.NoContent();
+        });
     }
 }

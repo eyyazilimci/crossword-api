@@ -20,7 +20,7 @@ public sealed record RecentGameDto(
     int ElapsedSeconds,
     DateTime CompletedAt);
 
-public sealed record WeakWordDto(string English, string Turkish, GameMode Mode, int CorrectCount, int WrongCount);
+public sealed record WeakWordDto(int WordId, string English, string Turkish, GameMode Mode, int CorrectCount, int WrongCount);
 
 public sealed record StatsDto(
     ProfileDto Profile,
@@ -60,8 +60,7 @@ public sealed class GetStatsHandler(IAppDbContext db, IClock clock) : IQueryHand
             .Where(m => m.WrongCount > 0)
             .OrderByDescending(m => m.WrongCount - m.CorrectCount)
             .ThenByDescending(m => m.LastSeenAt)
-            .Take(15)
-            .Select(m => new WeakWordDto(m.Word.English, m.Word.Turkish, m.Mode, m.CorrectCount, m.WrongCount))
+            .Select(m => new WeakWordDto(m.WordId, m.Word.English, m.Word.Turkish, m.Mode, m.CorrectCount, m.WrongCount))
             .ToListAsync(ct);
 
         var achievements = await AchievementList.LoadAsync(db, ct);
