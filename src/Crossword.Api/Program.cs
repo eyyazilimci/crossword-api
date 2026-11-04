@@ -37,5 +37,6 @@ api.MapHealthEndpoints();
 api.MapPuzzleEndpoints();
 api.MapSessionEndpoints();
 api.MapStatsEndpoints();
+api.MapQuizEndpoints();
 
 app.Run();

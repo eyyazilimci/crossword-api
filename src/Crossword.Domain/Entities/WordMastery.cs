@@ -19,13 +19,23 @@ public sealed class WordMastery
     public static WordMastery Create(int wordId, GameMode mode, DateTime now) =>
         new() { WordId = wordId, Mode = mode, LastSeenAt = now };
 
-    public void Record(bool correct, DateTime now)
+    /// <summary>Notes that the word was played. A miss adds nothing to the unknown list; only the player does that.</summary>
+    public void RecordSeen(bool correct, DateTime now)
     {
         if (correct) CorrectCount++;
-        else WrongCount++;
         LastSeenAt = now;
     }
 
-    /// <summary>Extra generation priority for words the player keeps missing.</summary>
+    /// <summary>The player put the word on the unknown list after a puzzle, taking back that puzzle's correct count if it got one.</summary>
+    public void MarkUnknown(bool countedCorrect)
+    {
+        if (countedCorrect && CorrectCount > 0) CorrectCount--;
+        WrongCount++;
+    }
+
+    /// <summary>The player took the word off the unknown list, so it stops coming back for review.</summary>
+    public void RemoveFromUnknownList() => WrongCount = 0;
+
+    /// <summary>Above zero while the word is still on the player's unknown list and not yet made up for.</summary>
     public double ReviewWeight => Math.Max(0, WrongCount - CorrectCount * 0.5);
 }

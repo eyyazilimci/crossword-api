@@ -90,3 +90,42 @@ internal sealed class UnlockedAchievementConfiguration : IEntityTypeConfiguratio
         b.HasIndex(a => a.Code).IsUnique();
     }
 }
+
+internal sealed class QuizQuestionConfiguration : IEntityTypeConfiguration<QuizQuestion>
+{
+    public void Configure(EntityTypeBuilder<QuizQuestion> b)
+    {
+        b.ToTable("quiz_questions");
+        b.Property(q => q.Key).HasMaxLength(40);
+        b.Property(q => q.Topic).HasMaxLength(40);
+        b.Property(q => q.Level).HasConversion<string>().HasMaxLength(4);
+        b.Property(q => q.Prompt).HasMaxLength(500);
+        b.Property(q => q.Explanation).HasMaxLength(1000);
+        b.HasIndex(q => q.Key).IsUnique();
+        b.HasIndex(q => q.Topic);
+    }
+}
+
+internal sealed class QuizSessionConfiguration : IEntityTypeConfiguration<QuizSession>
+{
+    public void Configure(EntityTypeBuilder<QuizSession> b)
+    {
+        b.ToTable("quiz_sessions");
+        b.Property(s => s.Id).ValueGeneratedNever();
+        b.Property(s => s.Kind).HasConversion<string>().HasMaxLength(16);
+        b.Property(s => s.Topic).HasMaxLength(40);
+        b.Property(s => s.Status).HasConversion<string>().HasMaxLength(16);
+        b.HasIndex(s => s.DailyDate).IsUnique().HasFilter("daily_date IS NOT NULL");
+    }
+}
+
+internal sealed class QuestionProgressConfiguration : IEntityTypeConfiguration<QuestionProgress>
+{
+    public void Configure(EntityTypeBuilder<QuestionProgress> b)
+    {
+        b.ToTable("question_progress");
+        b.HasKey(p => p.QuestionId);
+        b.Property(p => p.QuestionId).ValueGeneratedNever();
+        b.HasOne(p => p.Question).WithOne().HasForeignKey<QuestionProgress>(p => p.QuestionId).OnDelete(DeleteBehavior.Cascade);
+    }
+}

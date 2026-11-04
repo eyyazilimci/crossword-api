@@ -1,4 +1,5 @@
 using Crossword.Application.Stats;
+using Crossword.Domain;
 using Crossword.Infrastructure.Persistence;
 using Mediator;
 
@@ -13,6 +14,12 @@ internal static class StatsEndpoints
 
         app.MapGet("/stats", async (ISender sender, CancellationToken ct) =>
             await sender.Send(new GetStatsQuery(), ct)).WithTags("Stats");
+
+        app.MapDelete("/unknown-words/{mode}/{wordId:int}", async (GameMode mode, int wordId, ISender sender, CancellationToken ct) =>
+        {
+            await sender.Send(new RemoveUnknownWordCommand(wordId, mode), ct);
+            return Results.NoContent();
+        }).WithTags("Stats");
 
         app.MapGet("/achievements", async (ISender sender, CancellationToken ct) =>
             await sender.Send(new GetAchievementsQuery(), ct)).WithTags("Stats");

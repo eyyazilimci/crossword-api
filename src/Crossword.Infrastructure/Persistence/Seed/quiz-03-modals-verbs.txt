@@ -1,0 +1,78 @@
+# Grammar quiz question bank: Modals and verb patterns
+# key | topic | level | prompt (gap = ___) | A | B | C | D | answer | explanation (Turkish)
+
+mod-01 | modals | A2 | You ___ smoke in the hospital. It's forbidden. | mustn't | don't have to | needn't | shouldn't have | A | mustn't = yasak. don't have to ise "zorunda değilsin" demektir.
+mod-02 | modals | B1 | You ___ bring food; there will be plenty at the party. | mustn't | can't | don't have to | couldn't | C | Gerek yok, zorunlu değil: don't have to. mustn't yasak anlamı verirdi.
+mod-03 | modals | B1 | When I was five, I ___ swim, but now I swim every day. | can't | mustn't | won't | couldn't | D | Geçmişteki (yapamama) yetenek: couldn't.
+mod-04 | modals | B1 | "___ I open the window?" "Of course, go ahead." | Must | May | Need | Ought | B | İzin istemek için May I / Can I / Could I kullanılır.
+mod-05 | modals | B2 | He's been working for 14 hours. He ___ be exhausted. | can't | must | mustn't | should to | B | Güçlü çıkarım (eminim öyledir): must.
+mod-06 | modals | B1 | You look ill. You ___ see a doctor. | must to | ought | will | should | D | Tavsiye: should + yalın fiil. ought ise ought to biçiminde kullanılır.
+mod-07 | modals | B2 | That ___ be Sarah at the door; she's in Paris this week. | can't | mustn't | must | shouldn't | A | Olumsuz kesin çıkarım (imkânsız): can't. mustn't çıkarım için değil, yasak için kullanılır.
+mod-08 | modals | B2 | Will you ___ come to the meeting tomorrow? | can | could | be able to | may | C | will'den sonra can gelemez; bunun yerine be able to kullanılır.
+mod-09 | modals | B2 | Employees ___ wear a uniform at work. It's the company rule. | have to | can | may | needn't | A | Dış kuraldan gelen zorunluluk: have to.
+mod-10 | modals | C1 | You ___ better hurry, or you'll miss the train. | would | should | must | had | D | had better + yalın fiil: yapsan iyi olur (aksi hâlde kötü bir sonuç olur).
+mod-11 | modals | B1 | ___ you help me carry this box, please? | Must | Should | Could | Need | C | Kibar rica: Could you...?
+mod-12 | modals | B2 | We ___ wear a suit to the party last night; it was very informal, so I wore jeans. | mustn't | didn't have to | haven't to | don't need | B | Geçmişte zorunlu olmayan şey: didn't have to.
+mod-13 | modals | B2 | She ___ speak four languages by the time she was ten. | can | may | must | was able to | D | Geçmişteki yetenek: was able to (ya da could). can şimdiki zamandır.
+mod-14 | modals | C1 | You ___ worry about the bill; I've already paid it. | needn't | mustn't | can't | shouldn't to | A | Gerek yok: needn't + yalın fiil.
+mod-15 | modals | B1 | It's a secret. You ___ tell anyone. | needn't | don't have to | mustn't | haven't | C | Yasak: mustn't. needn't ve don't have to "gerek yok" anlamı verir.
+mod-16 | modals | B2 | "Where's Ali?" "I'm not sure. He ___ be in the library." | must | might | can't | has to | B | Emin değilim, yani zayıf olasılık: might.
+mod-17 | modals | C1 | Despite the storm, the pilot ___ land the plane safely. | managed to | could | can | might | A | Geçmişte tek bir zor durumda başarmak için could değil managed to / was able to kullanılır.
+mod-18 | modals | B2 | Students ___ use dictionaries in the exam; it's not allowed. | needn't | don't have to | shouldn't have | aren't allowed to | D | İzin yok: aren't allowed to.
+
+mp-01 | modals-past | B2 | You ___ have told me about the party. I would have come! | must | can't | should | needn't | C | should have + V3: yapmalıydın ama yapmadın (sitem).
+mp-02 | modals-past | B2 | The ground is wet. It ___ have rained last night. | must | can't | shouldn't | needn't | A | must have + V3: geçmiş hakkında güçlü çıkarım (kesin yağmış).
+mp-03 | modals-past | C1 | He ___ have taken the train; there were no trains because of the strike. | must | can't | should | needn't | B | can't have + V3: imkânsız, kesin olmamış.
+mp-04 | modals-past | C1 | You ___ have bought me a gift. It's very kind, but it wasn't necessary. | mustn't | can't | couldn't | needn't | D | needn't have + V3: yaptın ama gerek yoktu.
+mp-05 | modals-past | B2 | I can't find my keys. I ___ have left them at the office. | might | should | must not | needn't | A | might have + V3: belki öyle olmuştur (emin değilim).
+mp-06 | modals-past | C1 | She ___ have seen us; she walked right past without saying hello. | must | should | needn't | can't | D | Selam vermeden geçti, yani bizi görmüş olamaz: can't have seen.
+mp-07 | modals-past | B2 | We ___ have left earlier; now we're going to miss the start of the film. | must | could | should | might | C | Pişmanlık (erken çıkmalıydık): should have + V3.
+mp-08 | modals-past | C1 | The thief ___ have come in through the window; it was locked from the inside. | must | couldn't | should | needn't | B | Pencere içeriden kilitliydi, yani imkânsız: couldn't have / can't have.
+mp-09 | modals-past | B2 | You ___ have been really scared when the lights went out. | can't | needn't | should | must | D | Güçlü çıkarım (eminim çok korkmuşsundur): must have been.
+mp-10 | modals-past | C1 | I ___ have studied harder, but I was too lazy. | should | must | can't | needn't | A | Kendi geçmişine pişmanlık: should have + V3.
+mp-11 | modals-past | C1 | Why didn't you ask me? I ___ have helped you. | must | should | could | can't | C | could have + V3: yapabilirdim (imkân vardı) ama olmadı.
+mp-12 | modals-past | B2 | He ___ have forgotten about the meeting; I reminded him this morning. | must | can't | should | could | B | Bu sabah hatırlattım, unutmuş olamaz: can't have forgotten.
+mp-13 | modals-past | C1 | They ___ have arrived by now. Their flight landed two hours ago. | should | can't | needn't | mustn't | A | Beklenti (normalde varmış olmaları gerekir): should have + V3.
+mp-14 | modals-past | C1 | You ___ have cooked so much food; only four people are coming. | mustn't | can't | couldn't | needn't | D | needn't have: gereksiz yere yaptın.
+mp-15 | modals-past | B2 | She ___ have got lost; she has never been to this city before. | can't | might | needn't | shouldn't | B | Olasılık (belki kaybolmuştur): might have + V3.
+mp-16 | modals-past | C2 | You ___ have warned me about the traffic! I was two hours late. | needn't | must | might | can't | C | might have + V3 burada sitem bildirir: "haber verebilirdin!"
+mp-17 | modals-past | B2 | I ___ have locked the door, but I'm not completely sure. | can't | mustn't | needn't | may | D | Emin değilim, yani olasılık: may have + V3.
+mp-18 | modals-past | C1 | The documents ___ have been sent to the wrong address; they still haven't arrived. | may | needn't | shouldn't | mustn't | A | Olasılık (belki yanlış adrese gönderilmiştir): may have been + V3.
+
+gi-01 | gerund-infinitive | B1 | She enjoys ___ in the mountains. | to walk | walking | walk | walked | B | enjoy + V-ing.
+gi-02 | gerund-infinitive | B1 | They decided ___ a new car. | buying | buy | bought | to buy | D | decide + to V.
+gi-03 | gerund-infinitive | B2 | He denied ___ the documents. | taking | to take | take | to have take | A | deny + V-ing.
+gi-04 | gerund-infinitive | B1 | I can't afford ___ on holiday this year. | going | go | to go | went | C | afford + to V.
+gi-05 | gerund-infinitive | B2 | Would you mind ___ the window? | to close | close | closing | closed | C | mind + V-ing.
+gi-06 | gerund-infinitive | B2 | The manager made us ___ late. | stay | to stay | staying | stayed | A | make + nesne + yalın fiil (to almaz).
+gi-07 | gerund-infinitive | B2 | I'm looking forward ___ you next week. | to see | to seeing | seeing | for seeing | B | look forward to kalıbındaki to bir edattır, ardından V-ing gelir.
+gi-08 | gerund-infinitive | B2 | She avoided ___ him in the eye. | to look | look | looked | looking | D | avoid + V-ing.
+gi-09 | gerund-infinitive | B2 | My parents let me ___ out until midnight. | stay | to stay | staying | stayed | A | let + nesne + yalın fiil.
+gi-10 | gerund-infinitive | B2 | He refused ___ the contract. | signing | sign | to sign | signed | C | refuse + to V.
+gi-11 | gerund-infinitive | C1 | It's no use ___ about it now; it's too late. | to complain | complain | complained | complaining | D | It's no use + V-ing: ...mak boşuna.
+gi-12 | gerund-infinitive | B2 | We agreed ___ again the following week. | meeting | to meet | meet | met | B | agree + to V.
+gi-13 | gerund-infinitive | B2 | I'm not used to ___ up so early. | get | be getting | getting | got | C | be used to (alışkın olmak) kalıbındaki to bir edattır: + V-ing.
+gi-14 | gerund-infinitive | C1 | She insisted on ___ for the dinner. | paying | to pay | pay | paid | A | insist on + V-ing (edattan sonra -ing gelir).
+gi-15 | gerund-infinitive | B2 | You'd better ___ now, or you'll miss the bus. | to leave | leaving | left | leave | D | had better + yalın fiil.
+gi-16 | gerund-infinitive | C1 | He's considering ___ his job and travelling the world. | to quit | quitting | quit | quitted | B | consider + V-ing.
+gi-17 | gerund-infinitive | B2 | I'd like ___ you a question, if I may. | to ask | asking | ask | asked | A | would like + to V.
+gi-18 | gerund-infinitive | C1 | There's no point ___ him; he never answers his phone. | to call | call | calling | called | C | There's no point (in) + V-ing: ...manın anlamı yok.
+
+vmc-01 | verb-meaning-change | B2 | Please remember ___ the lights before you leave. | turning off | turn off | turned off | to turn off | D | remember + to V: yapılması gereken bir şeyi unutmamak (gelecek).
+vmc-02 | verb-meaning-change | B2 | I'll never forget ___ the Bosphorus for the first time. | to see | seeing | see | to have see | B | forget + V-ing: geçmişte yaşanmış bir anıyı unutmak.
+vmc-03 | verb-meaning-change | C1 | I regret ___ you that your application has been unsuccessful. | to inform | informing | inform | to informing | A | regret + to V: üzülerek bildirmek (resmî kalıp). regret + V-ing ise geçmişteki bir eyleme pişmanlıktır.
+vmc-04 | verb-meaning-change | B2 | He stopped ___ two years ago and feels much healthier now. | to smoke | smoke | smoking | smoked | C | stop + V-ing: bir alışkanlığı bırakmak.
+vmc-05 | verb-meaning-change | B2 | On the way home, we stopped ___ some petrol. | to buy | buying | buy | bought | A | stop + to V: bir şey yapmak için durmak.
+vmc-06 | verb-meaning-change | C1 | I regret ___ so rude to her yesterday. | to be | be | being | to being | C | regret + V-ing: geçmişte yaptığın bir şeye pişmanlık.
+vmc-07 | verb-meaning-change | B2 | Did you remember ___ the email? I can't find it in my inbox. | sending | send | sent | to send | D | remember + to V: yapman gereken şeyi yapmayı unutmadın mı?
+vmc-08 | verb-meaning-change | B2 | I remember ___ this place when I was a child. | to visit | visiting | visit | to visiting | B | remember + V-ing: geçmişteki bir anıyı hatırlamak.
+vmc-09 | verb-meaning-change | C1 | The room was too hot, so I tried ___ the window, but it was still hot. | to open | open | opening | opened | C | try + V-ing: işe yarar mı diye denemek (pencere açıldı ama oda yine sıcaktı). try + to V ise bir şeyi yapmaya çalışmaktır.
+vmc-10 | verb-meaning-change | C1 | I object to ___ like a child. | being treated | be treated | treat | treating | A | object to kalıbındaki to bir edattır, -ing gelir. Anlam edilgen: being treated.
+vmc-11 | verb-meaning-change | B2 | She went on ___ even after everyone had left. | to talk | talking | talk | talked | B | go on + V-ing: aynı şeyi yapmaya devam etmek.
+vmc-12 | verb-meaning-change | C1 | After explaining the rules, the teacher went on ___ us an example. | giving | give | gave | to give | D | go on + to V: bir şeyi bitirip sıradaki işe geçmek.
+vmc-13 | verb-meaning-change | C1 | I'm used to ___ in a noisy office. | working | work | worked | be working | A | be used to + V-ing: bir şeye alışkın olmak.
+vmc-14 | verb-meaning-change | B2 | When it comes to ___ decisions, he is very careful. | make | made | to make | making | D | when it comes to kalıbındaki to bir edattır: + V-ing.
+vmc-15 | verb-meaning-change | C1 | I meant ___ you, but I completely forgot. | calling | call | to call | called | C | mean + to V: niyetinde olmak.
+vmc-16 | verb-meaning-change | C1 | Getting a visa means ___ a lot of forms. | to fill in | filling in | fill in | filled in | B | mean + V-ing: gerektirmek, anlamına gelmek.
+vmc-17 | verb-meaning-change | B2 | He used ___ in London, but now he lives in Izmir. | to live | to living | living | lived | A | used to + yalın fiil: geçmişteki alışkanlık ya da durum (artık değil).
+vmc-18 | verb-meaning-change | C1 | We look forward ___ your reply. | to hear | hearing | to hearing | for hearing | C | look forward to + V-ing (resmî yazışma kalıbı).

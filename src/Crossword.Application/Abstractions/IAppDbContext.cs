@@ -12,6 +12,9 @@ public interface IAppDbContext
     DbSet<WordMastery> WordMasteries { get; }
     DbSet<PlayerProfile> PlayerProfiles { get; }
     DbSet<UnlockedAchievement> UnlockedAchievements { get; }
+    DbSet<QuizQuestion> QuizQuestions { get; }
+    DbSet<QuizSession> QuizSessions { get; }
+    DbSet<QuestionProgress> QuestionProgress { get; }
 
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

@@ -1,4 +1,5 @@
 using Crossword.Application.Abstractions;
+using Crossword.Application.Quiz;
 using Crossword.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -22,8 +23,10 @@ public static class DependencyInjection
         services.AddSingleton(TimeProvider.System);
         services.AddSingleton<IClock, SystemClock>();
         services.AddScoped<WordSeeder>();
+        services.AddScoped<QuestionSeeder>();
 
         services.Configure<DatabaseOptions>(configuration.GetSection(DatabaseOptions.Section));
+        services.Configure<QuizOptions>(configuration.GetSection(QuizOptions.Section));
         services.AddHostedService<DatabaseInitializer>();
         return services;
     }

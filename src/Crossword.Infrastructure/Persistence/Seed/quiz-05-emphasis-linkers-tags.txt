@@ -1,0 +1,97 @@
+# Grammar quiz question bank: Inversion, cleft sentences, linkers, comparison, question tags
+# key | topic | level | prompt (gap = ___) | A | B | C | D | answer | explanation (Turkish)
+
+inv-01 | inversion | C1 | Hardly ___ the house when it started to rain. | I had left | had I left | I left | did I leave | B | Hardly ... when kalıbı başa gelince soru sırası (inversion) kullanılır: Hardly had I left.
+inv-02 | inversion | C1 | No sooner ___ the office than the fire alarm went off. | I had entered | I entered | did I enter | had I entered | D | No sooner ... than + inversion: No sooner had I entered.
+inv-03 | inversion | C1 | Not only ___ late, but he also forgot the documents. | did he arrive | he arrived | he did arrive | arrived he | A | Not only başa gelince inversion: did he arrive.
+inv-04 | inversion | C1 | Only after the investigation ___ the truth. | we learned | we did learn | did we learn | learned we | C | Only after + ... + inversion: did we learn.
+inv-05 | inversion | C1 | Little ___ that he was being watched. | he knew | knew he | did he know | he did know | C | Little (hiç) başa gelince inversion: Little did he know.
+inv-06 | inversion | C1 | Never ___ such a beautiful view. | have I seen | I have seen | I saw | saw I | A | Never başa gelince inversion: Never have I seen.
+inv-07 | inversion | C1 | Under no circumstances ___ this door. | you should open | should you open | you open | open you | B | Under no circumstances + inversion: should you open.
+inv-08 | inversion | C2 | Not until the manager arrived ___ the meeting. | we started | we did start | started we | did we start | D | Not until ... + inversion: did we start.
+inv-09 | inversion | C1 | Rarely ___ such dedication in a new employee. | do we see | we see | we do see | see we | A | Rarely başa gelince inversion: do we see.
+inv-10 | inversion | C2 | Scarcely ___ asleep when the phone rang. | I had fallen | I fell | had I fallen | did I fell | C | Scarcely ... when + inversion: Scarcely had I fallen.
+inv-11 | inversion | C1 | At no time ___ that the project would fail. | we thought | we did think | thought we | did we think | D | At no time + inversion: did we think.
+inv-12 | inversion | C2 | So difficult ___ that only three students passed. | the exam was | was the exam | the exam is | did the exam | B | So + sıfat başa gelince inversion: So difficult was the exam that...
+inv-13 | inversion | C1 | Only then ___ how serious the situation was. | did I realise | I realised | I did realise | realised I | A | Only then + inversion: did I realise.
+inv-14 | inversion | C2 | Seldom ___ him lose his temper. | I have seen | I saw | have I seen | saw I | C | Seldom başa gelince inversion: have I seen.
+inv-15 | inversion | C1 | In no way ___ responsible for the accident. | the driver was | the driver is | was being | was the driver | D | In no way + inversion: was the driver.
+inv-16 | inversion | C2 | Such ___ that he couldn't speak. | his anger was | was his anger | his anger is | did his anger | B | Such + be + özne + that: Such was his anger that...
+inv-17 | inversion | C1 | Not once ___ for help during the whole project. | did she ask | she asked | she did ask | asked she | A | Not once + inversion: did she ask.
+inv-18 | inversion | C2 | Only by working together ___ this problem. | we can solve | we solve | can we solve | solve we | C | Only by + V-ing + inversion: can we solve.
+
+cl-01 | cleft-sentences | C1 | It was not until 2010 ___ the company started making a profit. | that | when | which | since | A | It was not until ... that kalıbı: ancak ...de/da.
+cl-02 | cleft-sentences | C1 | It was John ___ broke the window, not Peter. | which | whom | who | what | C | Kişiyi vurgulayan cleft yapı: It was John who / that...
+cl-03 | cleft-sentences | C1 | ___ I need is a long holiday. | That | Which | It | What | D | What-cleft: What I need is... (ihtiyacım olan şey...).
+cl-04 | cleft-sentences | C1 | It was in Istanbul ___ they first met. | whom | that | which | when | B | It was + yer/zaman ifadesi + that: vurgu yapısında that kullanılır.
+cl-05 | cleft-sentences | C1 | What surprised me most ___ his attitude. | were | was | is being | have been | B | What-cleft tekil kabul edilir; geçmiş olay olduğu için was.
+cl-06 | cleft-sentences | C2 | All I want ___ a quiet place to live. | are | have | being | is | D | All I want is... (tek istediğim şey...): tekil fiil.
+cl-07 | cleft-sentences | C1 | It's the price ___ worries me, not the quality. | that | what | it | where | A | It's + vurgulanan öğe + that: It's the price that worries me.
+cl-08 | cleft-sentences | C2 | What he did ___ call the police immediately. | is | being | was | did | C | What he did was (to) + V: yaptığı şey ... oldu.
+cl-09 | cleft-sentences | C1 | It was because of the rain ___ the match was cancelled. | why | which | that | so | C | It was because of ... that: sebebi vurgulayan cleft yapı.
+cl-10 | cleft-sentences | C1 | ___ was my brother who told me the news. | It | This | There | What | A | Cleft yapı It was ... who/that ile kurulur.
+cl-11 | cleft-sentences | C2 | The person ___ you should thank is your teacher. | it | what | which | who | D | Kişiyi niteleyen relative clause: the person who.
+cl-12 | cleft-sentences | C1 | ___ happened next was completely unexpected. | That | What | Which | It | B | What-cleft: What happened next was... (sonra olan şey).
+cl-13 | cleft-sentences | C2 | It is not the money ___ matters, but the experience. | that | what | who | where | A | It is not X that ..., but Y: vurgu yapısı.
+cl-14 | cleft-sentences | C1 | The reason I called you ___ to ask for advice. | is being | were | have | was | D | The reason ... was to + V: aramamın sebebi ... idi.
+cl-15 | cleft-sentences | C2 | It was only when I got home ___ I realised I had lost my phone. | when | which | that | then | C | It was only when ... that: ancak ...ince fark ettim.
+cl-16 | cleft-sentences | C1 | ___ I like about this city is its friendly people. | That | What | Which | How | B | What-cleft: What I like about... (sevdiğim şey).
+cl-17 | cleft-sentences | C1 | It was his attitude, not his skills, ___ cost him the job. | that | what | it | when | A | It was X, not Y, that...: X'i vurgulayan cleft yapı.
+cl-18 | cleft-sentences | C2 | What we need to do now ___ focus on the customers. | being | do | is | are | C | What we need to do is (to) + V.
+
+lk-01 | linkers | B1 | ___ the bad weather, the flight took off on time. | Although | Even though | However | In spite of | D | Ardından isim öbeği (the bad weather) geliyor: In spite of / Despite. Although tam cümle ister.
+lk-02 | linkers | B1 | ___ he was tired, he kept working. | Despite | Although | Because of | However | B | Ardından tam cümle (he was tired) geliyor: Although.
+lk-03 | linkers | B2 | She studied hard; ___, she failed the exam. | however | although | despite | because | A | İki cümleyi zıtlıkla bağlayan ve noktalı virgül ya da noktadan sonra gelen: however.
+lk-04 | linkers | B2 | ___ having little experience, she got the job. | Although | Even though | Despite | However | C | Despite + V-ing ya da isim.
+lk-05 | linkers | B1 | I stayed at home ___ I was feeling ill. | because | although | so | despite | A | Sebep bildiren bağlaç + tam cümle: because.
+lk-06 | linkers | B2 | Take an umbrella ___ it rains. | unless | so that | in case | despite | C | in case: olur da ... diye (önlem).
+lk-07 | linkers | B2 | My brother loves football, ___ I prefer basketball. | despite | in case | so that | whereas | D | İki durumu karşılaştıran zıtlık: whereas.
+lk-08 | linkers | B2 | He spoke slowly ___ everyone could understand him. | in case | so that | despite | unless | B | Amaç bildiren bağlaç: so that (...sın diye).
+lk-09 | linkers | C1 | The project was a success, ___ the many problems we faced. | although | even though | in spite of | however | C | Ardından isim öbeği geliyor: in spite of.
+lk-10 | linkers | B2 | ___ the traffic, we arrived late. | Because of | Because | Although | Despite of | A | Sebep + isim: Because of. (Despite of diye bir kalıp yoktur.)
+lk-11 | linkers | C1 | The company's profits fell. ___, it decided to cut jobs. | Despite | Consequently | Although | Whereas | B | Sonuç bildiren bağlayıcı: Consequently (bunun sonucunda).
+lk-12 | linkers | B2 | ___ it was raining, we went for a walk. | Despite | In spite of | However | Even though | D | Ardından tam cümle geliyor: Even though.
+lk-13 | linkers | C1 | ___ the fact that he was ill, he went to work. | Despite | Although | However | Even though | A | Despite the fact that + cümle. Although the fact that diye bir kalıp yoktur.
+lk-14 | linkers | B2 | You won't pass the exam ___ you study harder. | if | so that | in case | unless | D | unless = if not: daha çok çalışmazsan geçemezsin.
+lk-15 | linkers | C1 | ___ being expensive, the hotel was very popular. | Although | However | In spite of | Even | C | In spite of + V-ing.
+lk-16 | linkers | B2 | I was so tired ___ I fell asleep on the sofa. | than | that | as | so | B | so + sıfat + that: o kadar ... ki.
+lk-17 | linkers | C1 | ___ he is very rich, he lives in a small flat. | Even though | Despite | In spite of | However | A | Ardından tam cümle geliyor: Even though.
+lk-18 | linkers | C1 | The plan sounds good in theory. ___, it may not work in practice. | Although | In spite | Nevertheless | Whereas | C | Cümle başında zıtlık bildiren bağlayıcı: Nevertheless (yine de).
+
+cmp-01 | comparison | B1 | This is by far ___ project I've ever worked on. | more challenging | the more challenging | the most challenging | most challenging | C | by far + üstünlük: the most + sıfat.
+cmp-02 | comparison | B2 | The more you practise, ___ you will become. | the more confident | more confident | the most confident | most confident | A | The more ..., the more ... kalıbı (ne kadar ... o kadar ...).
+cmp-03 | comparison | B1 | My new phone is ___ than my old one. | more cheap | cheapest | the cheaper | much cheaper | D | Tek heceli sıfat + -er; much ile güçlendirilir: much cheaper than.
+cmp-04 | comparison | B1 | She isn't ___ her sister. | as tall than | as tall as | taller as | so tall than | B | Eşitlik karşılaştırması: as + sıfat + as.
+cmp-05 | comparison | B2 | The test was ___ than I expected. | more easy | easier | the easiest | most easy | B | -y ile biten iki heceli sıfat: easy, easier olur.
+cmp-06 | comparison | B2 | This is ___ film I have ever seen. | worse | the worse | the baddest | the worst | D | bad sıfatının üstünlük derecesi düzensizdir: the worst.
+cmp-07 | comparison | B2 | It's getting ___ to find a cheap flat in Istanbul. | harder and harder | more and more hard | hardest and hardest | the harder | A | Giderek artan değişim: comparative + and + comparative (harder and harder).
+cmp-08 | comparison | C1 | The new model is ___ more expensive than the old one. | very | too | considerably | most | C | Comparative'i güçlendirmek için much, far, considerably kullanılır; very kullanılmaz.
+cmp-09 | comparison | B1 | Ankara is ___ city than Izmir. | a bigger | the bigger | biggest | more big | A | than ile karşılaştırma: a bigger city than.
+cmp-10 | comparison | B2 | He runs ___ than anyone else in the team. | fast | most fast | the fastest | faster | D | than anyone else kalıbı comparative alır: faster.
+cmp-11 | comparison | C1 | The film wasn't nearly ___ good as the book. | more | than | as | the | C | not nearly as ... as: hiç de ... kadar değil.
+cmp-12 | comparison | B2 | This exercise is ___ difficult of all. | more | the most | most | the more | B | of all ile üstünlük: the most difficult.
+cmp-13 | comparison | C1 | The sooner we leave, ___ we'll arrive. | sooner | the soonest | soonest | the sooner | D | The + comparative, the + comparative kalıbı: the sooner.
+cmp-14 | comparison | B2 | My brother is ___ person I know. | the laziest | the lazier | laziest | more lazy | A | Üstünlük: the + sıfat-iest (lazy, the laziest olur).
+cmp-15 | comparison | C1 | She earns twice ___ her husband. | as much than | more than | as much as | as many as | C | Kat bildiren karşılaştırma: twice as much as (sayılamayan para için much).
+cmp-16 | comparison | B2 | Of the two options, the second one is ___. | the best | the better | better than | best | B | İki şey arasında resmî karşılaştırmada the better kullanılır.
+cmp-17 | comparison | C1 | The weather today is ___ worse than yesterday. | even | very | too | more | A | Comparative'i güçlendirmek için even kullanılır: even worse. very ile kullanılmaz.
+cmp-18 | comparison | B2 | He is not ___ clever as he thinks he is. | such | more | than | so | D | Olumsuz cümlede not so ... as da kullanılabilir (not as ... as ile aynı anlam).
+
+tag-01 | tags-agreement | B1 | You're coming to the party, ___? | are you | aren't you | don't you | won't you | B | Olumlu cümle, olumsuz tag alır. Yardımcı fiil are: aren't you?
+tag-02 | tags-agreement | B2 | Hardly anyone came to the event, ___? | did they | didn't they | wasn't it | did he | A | hardly cümleyi olumsuz yapar, bu yüzden tag olumlu olur. anyone için they kullanılır: did they?
+tag-03 | tags-agreement | B1 | She can swim, ___? | can she | doesn't she | isn't she | can't she | D | Olumlu cümle ve modal can: can't she?
+tag-04 | tags-agreement | B2 | Let's go for a walk, ___? | will we | do we | shall we | don't we | C | Let's ile başlayan cümlenin tag'i: shall we?
+tag-05 | tags-agreement | B2 | I'm late, ___? | amn't I | am not I | aren't I | isn't it | C | I am cümlesinin olumsuz tag'i istisnadır: aren't I?
+tag-06 | tags-agreement | B2 | Nobody called while I was out, ___? | did they | didn't they | did he | was it | A | nobody olumsuz anlam taşır, tag olumlu olur. nobody için they kullanılır: did they?
+tag-07 | tags-agreement | B1 | They haven't finished yet, ___? | haven't they | have they | did they | do they | B | Olumsuz cümle, olumlu tag alır: have they?
+tag-08 | tags-agreement | B2 | A: "I don't think we'll make the deadline." B: "___" | So do I. | I don't think so too. | Neither I don't. | Neither do I. | D | Olumsuz bir görüşe katılmak: Neither do I.
+tag-09 | tags-agreement | B2 | A: "I really enjoyed the film." B: "___" | So did I. | So do I. | Neither did I. | I did too much. | A | Geçmiş zamanlı olumlu cümleye katılmak: So did I.
+tag-10 | tags-agreement | B2 | You've never been to Japan, ___? | haven't you | did you | have you | didn't you | C | never cümleyi olumsuz yapar, tag olumlu olur: have you?
+tag-11 | tags-agreement | B2 | Open the window, ___? | do you | don't you | shall you | will you | D | Emir cümlesinin tag'i: will you? (ya da would you / can you).
+tag-12 | tags-agreement | B2 | A: "I can't swim." B: "___" | Neither I can. | Neither can I. | So can't I. | I can't too. | B | Olumsuz cümleye katılmak: Neither + yardımcı fiil + özne.
+tag-13 | tags-agreement | B2 | Everything is ready, ___? | isn't it | aren't they | doesn't it | isn't everything | A | everything için tag'de it kullanılır: isn't it?
+tag-14 | tags-agreement | B1 | He went to London last week, ___? | wasn't he | doesn't he | did he | didn't he | D | Olumlu ve Past Simple cümle: didn't he?
+tag-15 | tags-agreement | C1 | A: "I'm not very good at maths." B: "___ I." | So am | Neither do | Nor am | So do | C | Olumsuz cümleye katılmak: Nor am I / Neither am I (yardımcı fiil am).
+tag-16 | tags-agreement | B2 | There's a bank near here, ___? | isn't it | isn't there | is there | hasn't it | B | There is cümlesinin tag'inde there kullanılır: isn't there?
+tag-17 | tags-agreement | C1 | I don't think he'll come, ___? | will he | do I | won't he | don't I | A | I think / I don't think ile başlayan cümlede tag yan cümleye göre yapılır: will he?
+tag-18 | tags-agreement | B2 | A: "I have to work this weekend." B: "So ___ I." | have | am | do | must | C | have to ana fiil gibi davranır, bu yüzden katılırken do kullanılır: So do I.

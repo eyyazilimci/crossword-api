@@ -13,6 +13,9 @@ public sealed class AppDbContext(DbContextOptions<AppDbContext> options) : DbCon
     public DbSet<WordMastery> WordMasteries => Set<WordMastery>();
     public DbSet<PlayerProfile> PlayerProfiles => Set<PlayerProfile>();
     public DbSet<UnlockedAchievement> UnlockedAchievements => Set<UnlockedAchievement>();
+    public DbSet<QuizQuestion> QuizQuestions => Set<QuizQuestion>();
+    public DbSet<QuizSession> QuizSessions => Set<QuizSession>();
+    public DbSet<QuestionProgress> QuestionProgress => Set<QuestionProgress>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder) =>
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);

@@ -33,7 +33,8 @@ tests/
 - **`LibraryPlanner`:** Bulmaca serisini üretir. Her bulmaca henüz kullanılmamış bir kelimeye sabitlenir, böylece **her kelime en az bir kez** kullanılır. Ardından her zorluk seviyesi için en az `MinPuzzlesPerDifficulty` bulmaca olacak şekilde tamamlar.
 - **Uygulama başlarken:** Mod başına zorluk başına 30 bulmaca üretilir; toplamda 2 mod × 4 seviye × 30 = 240 bulmaca. Listeye yeni kelime eklenirse onları kapsayan bulmacalar da açılışta üretilir. Kütüphane biterse yeni bulmaca anında üretilir.
 - **Günün bulmacası:** Zorluğu bir önceki günlük bulmacadaki başarıya göre seçilir (`DailyDifficultyPolicy`). Başarı = ipucu açılmadan ve kontrolde yanlış çıkmadan çözülen kelimelerin oranı. %90 ve üstü bir seviye yukarı, %70 altı bir seviye aşağı, arası aynı; bitirilmeyen bulmaca seviyeyi değiştirmez; ilk gün Kolay. Her mod ayrı takip edilir.
-- **Zayıf kelimeler:** Yanlış yaptığın kelimeler yeni bulmacalarda daha yüksek öncelik alır.
+- **Kelime seçimi:** Yeni bulmacalar önce hiç görülmemiş kelimeleri kullanır; son görülen kelimeler 30 gün içinde yavaşça yeniden öne çıkar.
+- **Bilinemeyen kelimeler:** Liste otomatik dolmaz, bulmaca sonunda sen seçersin. Seçilen kelimelerden en fazla 4'ü, son görülmelerinden 3 gün sonra bulmacaya geri döner.
 
 ## Kelime listesi
 
@@ -45,6 +46,21 @@ tests/
 - **Seviye:** Sıklık sırasından türetilir, her seviyede 350 kelime: A1, A2, B1, B2, C1, C2. Hepsi günlük hayatta yaygın kelimeler; C1/C2 resmi CEFR derecesi değil, listenin en az sık kısmı demek.
 - **Zorluklar:** Kolay A1–A2, Orta A2–B1, Zor B1–B2, Uzman C1–C2.
 - **Değişiklik:** Dosyayı düzenleyip uygulamayı yeniden başlatman yeterli. Seeder mevcut kelimeleri günceller, yenileri ekler.
+
+## Gramer testi (Günlük 10)
+
+`Crossword.Domain/Quiz`, `Crossword.Application/Quiz`
+
+Çengel bulmacanın yanında ikinci oyun: çoktan seçmeli, boşluk doldurmalı gramer soruları. Kelime listesinden bağımsızdır; bulmacanın XP, seri ve rozetlerine dokunmaz, kendi serisini ve istatistiğini tutar.
+
+- **Soru bankası:** `src/Crossword.Infrastructure/Persistence/Seed/quiz-*.txt`. Satır biçimi: `anahtar | konu | seviye | soru | A | B | C | D | cevap | açıklama`. Boşluk `___` ile gösterilir, iki boşluklu sorularda şıklar `a / b` biçimindedir. Açılışta anahtara göre yüklenir; dosyada düzeltilen soru yeniden başlatınca güncellenir.
+- **Kategoriler:** 13 ana kategori, 28 alt konu (`GrammarTopics`). Her soru bir alt konuya ve CEFR seviyesine bağlıdır.
+- **Günün testi:** 10 soru (`DailyQuizPlanner`). Önce önceki günlerde yanlış yapılan sorular (en eski önce, 3 adet), sonra en zayıf iki konudan yeni sorular (2'şer), bir üst seviyeden bir "meydan okuma" sorusu, kalanı konu başına en fazla 3 soruyla karışık. Bugün cevaplanan soru bugün tekrar sorulmaz.
+- **Konu gücü:** `(doğru + 1) / (görülen + 2)`. `Quiz:FocusTopics` ayarındaki konular yeterince oynanana kadar zayıf sayılır (başlangıç profili).
+- **Hedef seviye:** En az 8 cevap ve %70 başarı ile geçilen en yüksek seviyenin bir üstü; hiçbir seviye geçilmeden önce `Quiz:StartingLevel` (varsayılan B1, ayarda B2) (`QuizLevelPolicy`).
+- **Konu pratiği:** Seçilen konudan 10 soru; önce o konuda yanlış yapılanlar.
+- **Hatalı soru bildir:** Bildirilen soru bir daha sorulmaz; bankada düzeltilirse otomatik geri gelir.
+- **Testler:** `QuestionBankTests` gerçek banka dosyalarını okur: her satır geçerli mi, anahtarlar ve sorular tekil mi, her konuda en az 15 soru var mı, doğru cevaplar şıklara dengeli dağılmış mı, her şık her boşluğu dolduruyor mu.
 
 ## Veritabanı
 
@@ -64,9 +80,18 @@ psql -U postgres -d crossword -f db/schema.sql
 | `word_masteries` | Kelime başına doğru/yanlış sayısı (mod bazında) |
 | `player_profiles` | XP, seri, çözülen bulmaca sayısı (tek satır) |
 | `unlocked_achievements` | Açılan rozetler |
+| `quiz_questions` | Gramer soruları (`key`, `topic`, `level`, `prompt`, `options`, `correct_index`, `explanation`, `is_active`) |
+| `quiz_sessions` | Gramer testleri (`kind`: Daily/Practice, `daily_date`, `question_ids`, `choices`) |
+| `question_progress` | Soru başına görülme, doğru/yanlış sayısı ve son cevap |
 | `__EFMigrationsHistory` | EF Core migration kaydı (ileride `dotnet ef database update` için) |
 
 İstersen tabloları uygulamaya da kurdurabilirsin: `appsettings.json` → `Database:AutoMigrate: true`.
+
+Veritabanın gramer testinden önceki `schema.sql` ile kurulduysa yeni tabloları ekle:
+
+```bash
+psql -U postgres -d crossword -f db/upgrade-grammar-quiz.sql
+```
 
 ## Çalıştırma
 
@@ -85,7 +110,8 @@ dotnet run --project src/Crossword.Api
 | Method | Yol | Açıklama |
 | --- | --- | --- |
 | GET | `/api/dashboard` | Ana sayfa özeti |
-| GET | `/api/stats` | İstatistikler, zayıf kelimeler, rozetler |
+| GET | `/api/stats` | İstatistikler, bilinemeyen kelimeler, rozetler |
+| DELETE | `/api/unknown-words/{mode}/{wordId}` | Kelimeyi bilinemeyenler listesinden çıkar |
 | GET | `/api/puzzles` | Kütüphane + kelime kapsamı |
 | POST | `/api/puzzles/next` | Seçilen mod/zorlukta sıradaki bulmaca |
 | POST | `/api/puzzles/daily` | Günün bulmacası |
@@ -95,3 +121,9 @@ dotnet run --project src/Crossword.Api
 | POST | `/api/sessions/{id}/check` | Harf/kelime/bulmaca kontrolü |
 | POST | `/api/sessions/{id}/reveal` | İpucu (harf aç) |
 | POST | `/api/sessions/{id}/submit` | Bitir; puan, XP, rozet |
+| GET | `/api/quiz` | Gramer testi özeti: bugünün testi, seri, konu istatistikleri |
+| POST | `/api/quiz/daily` | Günün testini aç / devam et |
+| POST | `/api/quiz/practice` | Konu pratiği başlat (`{ "topic": "subjunctive" }`) |
+| GET | `/api/quiz/{id}` | Testi getir |
+| POST | `/api/quiz/{id}/answers` | Cevapla (`{ "position": 0, "choice": 2 }`); doğru şık ve açıklama döner |
+| POST | `/api/quiz/questions/{id}/report` | Soruyu hatalı olarak bildir |

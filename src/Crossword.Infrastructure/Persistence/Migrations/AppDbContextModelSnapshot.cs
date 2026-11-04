@@ -241,6 +241,179 @@ namespace Crossword.Infrastructure.Persistence.Migrations
                     b.ToTable("puzzle_entries", (string)null);
                 });
 
+            modelBuilder.Entity("Crossword.Domain.Entities.QuestionProgress", b =>
+                {
+                    b.Property<int>("QuestionId")
+                        .HasColumnType("integer")
+                        .HasColumnName("question_id");
+
+                    b.Property<int>("CorrectCount")
+                        .HasColumnType("integer")
+                        .HasColumnName("correct_count");
+
+                    b.Property<DateTime>("LastAnsweredAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("last_answered_at");
+
+                    b.Property<DateOnly>("LastAnsweredOn")
+                        .HasColumnType("date")
+                        .HasColumnName("last_answered_on");
+
+                    b.Property<bool>("LastCorrect")
+                        .HasColumnType("boolean")
+                        .HasColumnName("last_correct");
+
+                    b.Property<int>("SeenCount")
+                        .HasColumnType("integer")
+                        .HasColumnName("seen_count");
+
+                    b.Property<int>("WrongCount")
+                        .HasColumnType("integer")
+                        .HasColumnName("wrong_count");
+
+                    b.HasKey("QuestionId")
+                        .HasName("pk_question_progress");
+
+                    b.ToTable("question_progress", (string)null);
+                });
+
+            modelBuilder.Entity("Crossword.Domain.Entities.QuizQuestion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CorrectIndex")
+                        .HasColumnType("integer")
+                        .HasColumnName("correct_index");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("created_at");
+
+                    b.Property<string>("Explanation")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("character varying(1000)")
+                        .HasColumnName("explanation");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_active");
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("character varying(40)")
+                        .HasColumnName("key");
+
+                    b.Property<string>("Level")
+                        .IsRequired()
+                        .HasMaxLength(4)
+                        .HasColumnType("character varying(4)")
+                        .HasColumnName("level");
+
+                    b.PrimitiveCollection<string[]>("Options")
+                        .IsRequired()
+                        .HasColumnType("text[]")
+                        .HasColumnName("options");
+
+                    b.Property<string>("Prompt")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("character varying(500)")
+                        .HasColumnName("prompt");
+
+                    b.Property<DateTime?>("ReportedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("reported_at");
+
+                    b.Property<string>("Topic")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("character varying(40)")
+                        .HasColumnName("topic");
+
+                    b.HasKey("Id")
+                        .HasName("pk_quiz_questions");
+
+                    b.HasIndex("Key")
+                        .IsUnique()
+                        .HasDatabaseName("ix_quiz_questions_key");
+
+                    b.HasIndex("Topic")
+                        .HasDatabaseName("ix_quiz_questions_topic");
+
+                    b.ToTable("quiz_questions", (string)null);
+                });
+
+            modelBuilder.Entity("Crossword.Domain.Entities.QuizSession", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uuid")
+                        .HasColumnName("id");
+
+                    b.PrimitiveCollection<int[]>("Choices")
+                        .IsRequired()
+                        .HasColumnType("integer[]")
+                        .HasColumnName("choices");
+
+                    b.Property<DateTime?>("CompletedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("completed_at");
+
+                    b.Property<int>("CorrectCount")
+                        .HasColumnType("integer")
+                        .HasColumnName("correct_count");
+
+                    b.Property<DateOnly?>("DailyDate")
+                        .HasColumnType("date")
+                        .HasColumnName("daily_date");
+
+                    b.Property<string>("Kind")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("character varying(16)")
+                        .HasColumnName("kind");
+
+                    b.PrimitiveCollection<int[]>("QuestionIds")
+                        .IsRequired()
+                        .HasColumnType("integer[]")
+                        .HasColumnName("question_ids");
+
+                    b.Property<DateTime>("StartedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("started_at");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(16)
+                        .HasColumnType("character varying(16)")
+                        .HasColumnName("status");
+
+                    b.Property<string>("Topic")
+                        .HasMaxLength(40)
+                        .HasColumnType("character varying(40)")
+                        .HasColumnName("topic");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("updated_at");
+
+                    b.HasKey("Id")
+                        .HasName("pk_quiz_sessions");
+
+                    b.HasIndex("DailyDate")
+                        .IsUnique()
+                        .HasDatabaseName("ix_quiz_sessions_daily_date")
+                        .HasFilter("daily_date IS NOT NULL");
+
+                    b.ToTable("quiz_sessions", (string)null);
+                });
+
             modelBuilder.Entity("Crossword.Domain.Entities.UnlockedAchievement", b =>
                 {
                     b.Property<int>("Id")
@@ -377,6 +550,18 @@ namespace Crossword.Infrastructure.Persistence.Migrations
                     b.Navigation("Puzzle");
 
                     b.Navigation("Word");
+                });
+
+            modelBuilder.Entity("Crossword.Domain.Entities.QuestionProgress", b =>
+                {
+                    b.HasOne("Crossword.Domain.Entities.QuizQuestion", "Question")
+                        .WithOne()
+                        .HasForeignKey("Crossword.Domain.Entities.QuestionProgress", "QuestionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired()
+                        .HasConstraintName("fk_question_progress_quiz_questions_question_id");
+
+                    b.Navigation("Question");
                 });
 
             modelBuilder.Entity("Crossword.Domain.Entities.WordMastery", b =>

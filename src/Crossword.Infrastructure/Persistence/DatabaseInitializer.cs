@@ -39,6 +39,7 @@ internal sealed class DatabaseInitializer(
                 await db.Database.MigrateAsync(stoppingToken);
 
             await scope.ServiceProvider.GetRequiredService<WordSeeder>().SeedAsync(stoppingToken);
+            await SeedQuestionBankAsync(scope.ServiceProvider, stoppingToken);
 
             if (!options.Value.GenerateLibraryOnStartup)
                 return;
@@ -54,6 +55,20 @@ internal sealed class DatabaseInitializer(
         catch (Exception ex)
         {
             logger.LogError(ex, "Database initialisation failed. Is the schema created (db/schema.sql) and the connection string set?");
+        }
+    }
+
+    /// <summary>Kept apart so a missing quiz schema never stops the crossword library from being generated.</summary>
+    private async Task SeedQuestionBankAsync(IServiceProvider services, CancellationToken ct)
+    {
+        try
+        {
+            await services.GetRequiredService<QuestionSeeder>().SeedAsync(ct);
+        }
+        catch (Exception ex) when (ex is not OperationCanceledException)
+        {
+            logger.LogError(ex, "Question bank seeding failed. Are the quiz tables created (db/schema.sql)?");
+            services.GetRequiredService<AppDbContext>().ChangeTracker.Clear();
         }
     }
 }
