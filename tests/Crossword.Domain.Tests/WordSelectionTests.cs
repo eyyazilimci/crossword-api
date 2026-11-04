@@ -44,6 +44,17 @@ public class WordSelectionTests
     }
 
     [Fact]
+    public void A_word_removed_from_the_unknown_list_stops_coming_back_for_review()
+    {
+        var mastery = Unknown(1, 9);
+
+        mastery.RemoveFromUnknownList();
+
+        Assert.Equal(0, mastery.WrongCount);
+        Assert.Empty(WordSelection.PickReviewWords([mastery], Now));
+    }
+
+    [Fact]
     public void New_words_outrank_every_seen_word_even_after_a_long_time()
     {
         var newWord = WordSelection.Priority(null, false, Now);

@@ -110,7 +110,8 @@ dotnet run --project src/Crossword.Api
 | Method | Yol | Açıklama |
 | --- | --- | --- |
 | GET | `/api/dashboard` | Ana sayfa özeti |
-| GET | `/api/stats` | İstatistikler, zayıf kelimeler, rozetler |
+| GET | `/api/stats` | İstatistikler, bilinemeyen kelimeler, rozetler |
+| DELETE | `/api/unknown-words/{mode}/{wordId}` | Kelimeyi bilinemeyenler listesinden çıkar |
 | GET | `/api/puzzles` | Kütüphane + kelime kapsamı |
 | POST | `/api/puzzles/next` | Seçilen mod/zorlukta sıradaki bulmaca |
 | POST | `/api/puzzles/daily` | Günün bulmacası |

@@ -33,6 +33,9 @@ public sealed class WordMastery
         WrongCount++;
     }
 
+    /// <summary>The player took the word off the unknown list, so it stops coming back for review.</summary>
+    public void RemoveFromUnknownList() => WrongCount = 0;
+
     /// <summary>Above zero while the word is still on the player's unknown list and not yet made up for.</summary>
     public double ReviewWeight => Math.Max(0, WrongCount - CorrectCount * 0.5);
 }
